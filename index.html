@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanzin's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    nav {
+      background: #222;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+    .section {
+      padding: 2rem;
+      background: white;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #00adb5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    a.button:hover {
+      transform: scale(1.05);
+      background-color: #007b80;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Mohammed Abdul Al Arafat Tanzin</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section" data-aos="fade-down">
+    <img src="image_github.jpeg" alt="Tanzin's Photo" class="profile-photo">
+    <h2>Welcome</h2>
+    <p>I'm Tanzin, a fast learner passionate about creating useful solutions and driving revolutionary change. Skilled in Machine Learn-
+ing, AI, and NLP, with hands-on experience in emotion detection and sentiment analysis. Always eager to learn and
+
+innovate, I aim to leverage technology to improve lives and empower communities. Seeking opportunities to grow
+and make a meaningful impact.</p>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science and Engineering student at BRAC University. My academic focus lies in Artificial Intelligence, Machine Learning, Web Development, and applied research that impacts society.</p>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>ClusSumm</strong> — Multimodal sentiment-based summarizer</li>
+      <li><strong>Literacy Forecasting</strong> — Using ML/Hybrid models for Bangladesh literacy rate prediction</li>
+      <li><strong>Shrimp Research</strong> — Shrimp population estimation with ML & underwater vision</li>
+    </ul>
+  </section>
+
+  <section id="research" class="section" data-aos="fade-up">
+    <h2>Research</h2>
+    <p>Published and ongoing research on emotion detection, text summarization, forecasting, and machine vision for agriculture.</p>
+  </section>
+
+  <section id="resume" class="section" data-aos="fade-up">
+    <h2>Qualifications</h2>
+    <h3>Education</h3>
+    <p>BRAC University — B.Sc. in Computer Science and Engineering</p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>Programming: Python, C</li>
+      <li>Frameworks: TensorFlow, PyTorch, Scikit-learn, Pandas, Numpy, Django</li>
+      <li>Databases: MySQL, Sqlite</li>
+    </ul>
+
+    <!--h3>Experience</h3>
+    <p><strong>ML Research Intern</strong>, XYZ Lab (Jan 2024 – Present)</p>
+    <ul>
+      <li>Conducted research on sentiment analysis models</li>
+      <li>Published findings in ABC Journal</li>
+    </ul-->
+
+    <h3>Certifications</h3>
+    <ul>
+      <li>Machine Learning by Stanford University (Coursera)</li>
+    </ul>
+
+    <a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" class="button">View Full Resume</a>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></p>
+    <a href="mailto:tanzinabdul@gmail.com" class="button">Email Me</a>
+    <p style="margin-top:1rem;">
+      <a href="https://github.com/TanzinAbdul" target="_blank" class="button">GitHub</a>
+      <a href="https://www.linkedin.com/in/tanzin-abdul/" target="_blank" class="button">LinkedIn</a>
+      <a href="https://sites.google.com/view/tanzin/home" target="_blank" class="button">Google Sites</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tanzin</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
