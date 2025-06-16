@@ -55,20 +55,6 @@
       padding: 1rem 0;
       transition: all 0.3s ease;
     }
-    .navbar {
-      transition: transform 0.3s ease, background 0.3s ease;
-      will-change: transform;
-    }
-    
-    @media (max-width: 768px) {
-      .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        transform: translateY(0);
-      }
-    }
 
     .navbar.scrolled {
       background: rgba(255, 255, 255, 0.98);
@@ -1192,69 +1178,6 @@
     window.addEventListener('scroll', throttle(function() {
       // Existing scroll handlers are already attached above
     }, 16)); // ~60fps
-    // Navbar scroll behavior for mobile
-let lastScrollPosition = 0;
-let isScrollingDown = false;
-let scrollTimeout;
-
-window.addEventListener('scroll', function() {
-  const currentScrollPosition = window.pageYOffset;
-  const navbar = document.querySelector('.navbar');
-  const mobileBreakpoint = 768; // Your mobile breakpoint
-  
-  // Only apply this behavior for mobile
-  if (window.innerWidth <= mobileBreakpoint) {
-    // Determine scroll direction
-    isScrollingDown = currentScrollPosition > lastScrollPosition;
-    
-    // Clear any existing timeout
-    clearTimeout(scrollTimeout);
-    
-    if (isScrollingDown && currentScrollPosition > 100) {
-      // Scrolling down - hide navbar immediately
-      navbar.style.transform = 'translateY(-100%)';
-      navbar.style.transition = 'transform 0.3s ease';
-    } else {
-      // Scrolling up - show navbar immediately
-      navbar.style.transform = 'translateY(0)';
-      
-      // Set timeout to hide navbar after 2 seconds if not scrolling
-      scrollTimeout = setTimeout(() => {
-        if (currentScrollPosition > 100) {
-          navbar.style.transform = 'translateY(-100%)';
-          navbar.style.transition = 'transform 0.3s ease';
-        }
-      }, 2000);
-    }
-    
-    // Always show navbar at top of page
-    if (currentScrollPosition < 10) {
-      navbar.style.transform = 'translateY(0)';
-    }
-  } else {
-    // Desktop behavior - keep navbar visible
-    navbar.style.transform = 'translateY(0)';
-  }
-  
-  lastScrollPosition = currentScrollPosition;
-  
-  // Existing scroll effect for desktop
-  if (window.scrollY > 100) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
-
-// Make sure navbar is visible when menu is open
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-if (mobileMenuToggle) {
-  mobileMenuToggle.addEventListener('click', function() {
-    const navbar = document.querySelector('.navbar');
-    navbar.style.transform = 'translateY(0)';
-    clearTimeout(scrollTimeout);
-  });
-}
   </script>
 </body>
 </html>
