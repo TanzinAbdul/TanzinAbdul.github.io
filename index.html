@@ -927,4 +927,254 @@
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with fade-in class
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Typing effect for hero title
+    function typeWriter(element, text, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, speed);
+        }
+      }
+      typing();
+    }
+
+    // Initialize typing effect when page loads
+    window.addEventListener('load', function() {
+      const heroTitle = document.querySelector('.hero-text h1');
+      const originalText = heroTitle.textContent;
+      typeWriter(heroTitle, originalText, 80);
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero');
+      const heroContent = document.querySelector('.hero-content');
+      
+      if (hero && scrolled < hero.offsetHeight) {
+        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+
+    // Counter animation for stats
+    function animateCounter(element, target, duration = 2000) {
+      let start = 0;
+      const increment = target / (duration / 16);
+      
+      function updateCounter() {
+        start += increment;
+        if (start < target) {
+          element.textContent = Math.floor(start) + '+';
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target + '+';
+        }
+      }
+      updateCounter();
+    }
+
+    // Trigger counter animation when stats come into view
+    const statsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat-number');
+          statNumbers.forEach(stat => {
+            const target = parseInt(stat.textContent);
+            animateCounter(stat, target);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    // Observe stats section
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // Project card hover effects
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-15px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Skill category hover effects
+    document.querySelectorAll('.skill-category').forEach(skill => {
+      skill.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-15px)';
+        this.style.boxShadow = '0 30px 60px -12px rgba(0, 0, 0, 0.25)';
+      });
+      
+      skill.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';
+      });
+    });
+
+    // Mobile menu toggle (if needed for responsive)
+    const mobileMenuToggle = document.createElement('button');
+    mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    mobileMenuToggle.classList.add('mobile-menu-toggle');
+    mobileMenuToggle.style.display = 'none';
+    
+    // Add mobile menu functionality
+    function checkMobile() {
+      const navLinks = document.querySelector('.nav-links');
+      if (window.innerWidth <= 768) {
+        mobileMenuToggle.style.display = 'block';
+        document.querySelector('.nav-container').appendChild(mobileMenuToggle);
+      } else {
+        mobileMenuToggle.style.display = 'none';
+        navLinks.style.display = 'flex';
+      }
+    }
+
+    // Check on load and resize
+    window.addEventListener('load', checkMobile);
+    window.addEventListener('resize', checkMobile);
+
+    // Add loading animation
+    window.addEventListener('load', function() {
+      document.body.classList.add('loaded');
+      
+      // Remove loading class after animations complete
+      setTimeout(() => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+          el.classList.add('visible');
+        });
+      }, 100);
+    });
+
+    // Add CSS for mobile menu toggle
+    const mobileMenuStyle = document.createElement('style');
+    mobileMenuStyle.textContent = `
+      .mobile-menu-toggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-primary);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      
+      .mobile-menu-toggle:hover {
+        background: rgba(99, 102, 241, 0.1);
+        color: var(--primary);
+      }
+      
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.98);
+          backdrop-filter: blur(20px);
+          flex-direction: column;
+          padding: 2rem;
+          box-shadow: var(--shadow);
+        }
+        
+        .nav-links.active {
+          display: flex;
+        }
+      }
+      
+      body.loaded * {
+        animation-play-state: running;
+      }
+    `;
+    document.head.appendChild(mobileMenuStyle);
+
+    // Mobile menu toggle functionality
+    mobileMenuToggle.addEventListener('click', function() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Email validation and contact form enhancement
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Add a small delay to show interaction
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 150);
+      });
+    });
+
+    // Add smooth entrance animations with staggered timing
+    function staggerAnimation() {
+      const elements = document.querySelectorAll('.fade-in:not(.visible)');
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          if (isElementInViewport(element)) {
+            element.classList.add('visible');
+          }
+        }, index * 100);
+      });
+    }
+
+    // Helper function to check if element is in viewport
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Trigger staggered animations on scroll
+    window.addEventListener('scroll', staggerAnimation);
+
+    // Performance optimization: throttle scroll events
+    function throttle(func, limit) {
+      let inThrottle;
+      return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+          func.apply(context, args);
+          inThrottle = true;
+          setTimeout(() => inThrottle = false, limit);
+        }
+      }
+    }
+
+    // Apply throttling to scroll events
+    window.addEventListener('scroll', throttle(function() {
+      // Existing scroll handlers are already attached above
+    }, 16)); // ~60fps
