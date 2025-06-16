@@ -1,102 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Abdul Al Arafat Tanzin | AI/ML Engineer</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanzin Abdul | AI/ML Researcher & Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #6366f1;
-      --primary-dark: #4f46e5;
-      --secondary: #06b6d4;
-      --accent: #f59e0b;
-      --dark: #0f172a;
-      --gray-900: #111827;
-      --gray-800: #1f2937;
-      --gray-700: #374151;
-      --gray-600: #4b5563;
-      --gray-300: #d1d5db;
-      --gray-100: #f3f4f6;
-      --white: #ffffff;
-      --text-primary: #0f172a;
-      --text-secondary: #64748b;
-      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-      --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #10b981;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --light-gray: #e2e8f0;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
-
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
       line-height: 1.6;
-      color: var(--text-primary);
-      background: var(--white);
-      overflow-x: hidden;
     }
-
-    /* Navigation */
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      z-index: 1000;
-      padding: 1rem 0;
-      transition: all 0.3s ease;
+    
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.2;
     }
-
-    .navbar.scrolled {
-      background: rgba(255, 255, 255, 0.98);
-      box-shadow: var(--shadow);
+    
+    a {
+      text-decoration: none;
+      color: inherit;
     }
-
-    .nav-container {
+    
+    .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1.5rem 0;
     }
-
+    
     .logo {
       font-size: 1.5rem;
       font-weight: 700;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--primary);
     }
-
+    
     .nav-links {
       display: flex;
-      list-style: none;
       gap: 2rem;
     }
-
+    
     .nav-links a {
-      text-decoration: none;
-      color: var(--text-secondary);
-      font-weight: 500;
-      transition: all 0.3s ease;
       position: relative;
+      font-weight: 500;
+      color: var(--gray);
+      transition: var(--transition);
     }
-
+    
     .nav-links a:hover {
       color: var(--primary);
     }
-
+    
     .nav-links a::after {
       content: '';
       position: absolute;
@@ -104,555 +94,572 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: var(--gradient);
-      transition: width 0.3s ease;
+      background-color: var(--primary);
+      transition: var(--transition);
     }
-
+    
     .nav-links a:hover::after {
       width: 100%;
     }
-
-    /* Hero Section */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
-      background-size: cover;
-    }
-
-    .hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-text {
-      color: white;
-    }
-
-    .hero-text h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-      animation: fadeInUp 1s ease;
-    }
-
-    .hero-text .subtitle {
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 1.5rem;
-      opacity: 0.9;
-      animation: fadeInUp 1s ease 0.2s both;
-    }
-
-    .hero-text p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      opacity: 0.8;
-      animation: fadeInUp 1s ease 0.4s both;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      animation: fadeInUp 1s ease 0.6s both;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
       border: none;
+      font-size: 1.5rem;
+      color: var(--dark);
       cursor: pointer;
     }
-
-    .btn-primary {
-      background: white;
-      color: var(--primary);
+    
+    /* Hero Section */
+    .hero {
+      padding: 8rem 0 5rem;
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
+    
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
     }
-
-    .btn-outline {
-      background: transparent;
-      color: white;
-      border: 2px solid white;
+    
+    .hero-text {
+      flex: 1;
     }
-
-    .btn-outline:hover {
-      background: white;
-      color: var(--primary);
-    }
-
+    
     .hero-image {
+      flex: 1;
       display: flex;
       justify-content: center;
-      align-items: center;
-      animation: fadeInRight 1s ease 0.8s both;
     }
-
-    .profile-image {
+    
+    .profile-photo {
       width: 300px;
       height: 300px;
       border-radius: 50%;
       object-fit: cover;
-      border: 8px solid rgba(255, 255, 255, 0.2);
-      box-shadow: var(--shadow-lg);
-      animation: float 6s ease-in-out infinite;
+      border: 5px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
-
-    /* Sections */
-    .section {
-      padding: 6rem 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .section-title {
+    
+    .hero-title {
       font-size: 2.5rem;
-      font-weight: 700;
       margin-bottom: 1rem;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--dark);
     }
-
-    .section-subtitle {
+    
+    .hero-subtitle {
       font-size: 1.2rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* About Section */
-    .about-content {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .about-image {
-      position: relative;
-    }
-
-    .about-image img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-    }
-
-    .about-text h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .about-text p {
-      color: var(--text-secondary);
+      color: var(--gray);
       margin-bottom: 1.5rem;
-      font-size: 1.1rem;
+      font-weight: 400;
     }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 2rem;
+    
+    .hero-description {
+      margin-bottom: 2rem;
+      color: var(--gray);
     }
-
-    .stat-item {
-      text-align: center;
-      padding: 1.5rem;
-      background: var(--gray-100);
-      border-radius: 15px;
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
-
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .stat-label {
-      color: var(--text-secondary);
-      font-weight: 500;
-    }
-
-    /* Skills Section */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .skill-category {
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s ease;
-    }
-
-    .skill-category:hover {
-      transform: translateY(-10px);
-    }
-
-    .skill-icon {
-      width: 60px;
-      height: 60px;
-      background: var(--gradient);
-      border-radius: 15px;
+    
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+    
+    .social-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    
+    .btn-primary {
+      background-color: var(--primary);
       color: white;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      margin-right: 1rem;
     }
-
-    .skill-category h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
+    
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
     }
-
-    .skill-list {
-      list-style: none;
-    }
-
-    .skill-list li {
-      padding: 0.5rem 0;
-      color: var(--text-secondary);
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
-    .skill-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
+    
+    .btn-outline {
+      border: 2px solid var(--primary);
       color: var(--primary);
-      font-weight: bold;
     }
-
+    
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    /* Sections */
+    .section {
+      padding: 5rem 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      border-radius: 2px;
+    }
+    
+    /* About Section */
+    .about-content {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about-text {
+      flex: 1;
+    }
+    
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .about-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
     /* Projects Section */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       gap: 2rem;
     }
-
+    
     .project-card {
-      background: white;
-      border-radius: 20px;
+      background-color: white;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all 0.3s ease;
-      position: relative;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
     }
-
+    
     .project-card:hover {
       transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     }
-
+    
     .project-image {
       height: 200px;
-      background: var(--gradient);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
     }
-
-    .project-image i {
-      font-size: 3rem;
-      color: white;
-      opacity: 0.8;
+    
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
     }
-
+    
+    .project-card:hover .project-image img {
+      transform: scale(1.05);
+    }
+    
     .project-content {
-      padding: 2rem;
+      padding: 1.5rem;
     }
-
+    
     .project-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
     }
-
+    
     .project-description {
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
+      color: var(--gray);
+      margin-bottom: 1rem;
     }
-
-    .project-tech {
+    
+    .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
-
-    .tech-tag {
-      background: var(--gray-100);
-      color: var(--text-secondary);
+    
+    .project-tag {
+      background-color: var(--light-gray);
+      color: var(--dark);
       padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
       font-weight: 500;
     }
-
+    
     .project-links {
       display: flex;
       gap: 1rem;
     }
-
+    
     .project-link {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.9rem;
       color: var(--primary);
-      text-decoration: none;
       font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: color 0.3s ease;
     }
-
-    .project-link:hover {
-      color: var(--primary-dark);
-    }
-
-    /* Contact Section */
-    .contact {
-      background: var(--gray-900);
-      color: white;
-    }
-
-    .contact-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-    }
-
-    .contact-info h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-info p {
-      opacity: 0.8;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
-
-    .contact-methods {
-      list-style: none;
-    }
-
-    .contact-methods li {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.1);
+    
+    /* Research Section */
+    .research-item {
+      background-color: white;
+      padding: 2rem;
       border-radius: 10px;
-      transition: background 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      transition: var(--transition);
     }
-
-    .contact-methods li:hover {
-      background: rgba(255, 255, 255, 0.15);
+    
+    .research-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
-
-    .contact-methods i {
-      width: 20px;
-      color: var(--secondary);
+    
+    .research-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
     }
-
-    .contact-methods a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .social-links {
+    
+    .research-meta {
       display: flex;
       gap: 1rem;
-      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--gray);
+      font-size: 0.9rem;
     }
-
-    .social-link {
+    
+    .research-description {
+      margin-bottom: 1rem;
+    }
+    
+    .research-link {
+      color: var(--primary);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    
+    /* Resume Section */
+    .resume-container {
+      display: flex;
+      gap: 3rem;
+    }
+    
+    .resume-column {
+      flex: 1;
+    }
+    
+    .resume-item {
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+      border-left: 2px solid var(--light-gray);
+      position: relative;
+    }
+    
+    .resume-item::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      border: 3px solid white;
+    }
+    
+    .resume-date {
+      background-color: var(--light-gray);
+      color: var(--dark);
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .resume-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .resume-subtitle {
+      color: var(--gray);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .skill {
+      background-color: var(--light-gray);
+      color: var(--dark);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+      display: flex;
+      gap: 3rem;
+    }
+    
+    .contact-info {
+      flex: 1;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-icon {
       width: 50px;
       height: 50px;
-      background: var(--gradient);
       border-radius: 50%;
+      background-color: var(--light-gray);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      text-decoration: none;
-      transition: transform 0.3s ease;
+      color: var(--primary);
+      font-size: 1.2rem;
     }
-
-    .social-link:hover {
-      transform: translateY(-5px);
+    
+    .contact-form {
+      flex: 1;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
-
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--light-gray);
+      border-radius: 5px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
     /* Footer */
-    .footer {
-      background: var(--dark);
+    footer {
+      background-color: var(--dark);
       color: white;
+      padding: 3rem 0;
       text-align: center;
-      padding: 2rem 0;
     }
-
-    /* Animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
     }
-
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translateX(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
     }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
+    
+    .footer-link {
+      color: white;
+      transition: var(--transition);
     }
-
+    
+    .footer-link:hover {
+      color: var(--primary);
+    }
+    
+    .copyright {
+      color: var(--light-gray);
+      font-size: 0.9rem;
+    }
+    
     /* Responsive Design */
+    @media (max-width: 992px) {
+      .hero-content, 
+      .about-content,
+      .resume-container,
+      .contact-container {
+        flex-direction: column;
+      }
+      
+      .hero-image {
+        order: -1;
+        margin-bottom: 2rem;
+      }
+      
+      .profile-photo {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    
     @media (max-width: 768px) {
-      .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-text h1 {
-        font-size: 2.5rem;
-      }
-
       .nav-links {
         display: none;
       }
-
-      .about-content {
-        grid-template-columns: 1fr;
+      
+      .mobile-menu-btn {
+        display: block;
       }
-
-      .contact-content {
-        grid-template-columns: 1fr;
+      
+      .hero-title {
+        font-size: 2rem;
       }
-
-      .stats {
-        grid-template-columns: 1fr;
+      
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .section {
+        padding: 3rem 0;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
       }
     }
-
-    /* Scroll animations */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+    
+    @media (max-width: 576px) {
+      .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      
+      .btn-primary {
+        margin-right: 0;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">Tanzin</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Tanzin</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Mohammed Abdul Al Arafat Tanzin</h1>
-        <div class="subtitle">AI/ML Engineer & Researcher</div>
-        <p>Passionate about creating intelligent solutions that drive revolutionary change. Specialized in Machine Learning, Natural Language Processing, and Computer Vision with a focus on real-world applications.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fas fa-rocket"></i>
-            View Projects
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            <i class="fas fa-envelope"></i>
-            Get In Touch
-          </a>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right">
+          <h1 class="hero-title">Mohammed Abdul Al Arafat Tanzin</h1>
+          <h2 class="hero-subtitle">AI/ML Researcher & Developer</h2>
+          <p class="hero-description">
+            I'm a fast learner passionate about creating useful solutions and driving revolutionary change. 
+            Skilled in Machine Learning, AI, and NLP, with hands-on experience in emotion detection and 
+            sentiment analysis. Always eager to learn and innovate, I aim to leverage technology to improve 
+            lives and empower communities.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/TanzinAbdul" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tanzin-abdul/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://sites.google.com/view/tanzin/home" target="_blank" class="social-link">
+              <i class="fas fa-globe"></i>
+            </a>
+            <a href="mailto:tanzinabdul@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" class="btn btn-outline">View Resume</a>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="image_github.jpeg" alt="Tanzin's Photo" class="profile-image">
+        <div class="hero-image" data-aos="fade-left">
+          <img src="image_github.jpeg" alt="Tanzin's Photo" class="profile-photo">
+        </div>
       </div>
     </div>
   </section>
@@ -660,171 +667,245 @@
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Dedicated to pushing the boundaries of AI and creating meaningful impact through technology</p>
-      </div>
-      <div class="about-content fade-in">
-        <div class="about-image">
-          <div class="stats">
-            <div class="stat-item">
-              <div class="stat-number">3+</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Projects</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">2+</div>
-              <div class="stat-label">Publications</div>
-            </div>
-          </div>
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p>
+            I am a passionate Computer Science and Engineering student at BRAC University. My academic focus lies in 
+            Artificial Intelligence, Machine Learning, Web Development, and applied research that impacts society.
+          </p>
+          <p>
+            With a strong foundation in both theoretical concepts and practical applications, I strive to bridge the gap 
+            between cutting-edge technology and real-world problems. My work primarily revolves around natural language 
+            processing, computer vision, and predictive modeling.
+          </p>
+          <p>
+            When I'm not coding or researching, you can find me exploring new technologies, contributing to open-source 
+            projects, or mentoring fellow students in their tech journey.
+          </p>
         </div>
-        <div class="about-text">
-          <h3>Fast Learner & Innovation Driver</h3>
-          <p>I'm a Computer Science and Engineering student at BRAC University with a deep passion for Artificial Intelligence and Machine Learning. My journey involves exploring cutting-edge technologies and applying them to solve real-world problems.</p>
-          <p>With expertise in emotion detection, sentiment analysis, and natural language processing, I strive to create solutions that not only showcase technical excellence but also contribute meaningfully to society. My research focuses on multimodal AI systems and their applications in various domains.</p>
-          <p>Always eager to learn, collaborate, and innovate, I'm actively seeking opportunities to grow professionally while making a lasting impact in the AI/ML field.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section" style="background: var(--gray-100);">
-    <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Skills & Expertise</h2>
-        <p class="section-subtitle">Comprehensive technical stack for modern AI/ML development</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>Machine Learning</h3>
-          <ul class="skill-list">
-            <li>TensorFlow & PyTorch</li>
-            <li>Scikit-learn</li>
-            <li>Deep Learning</li>
-            <li>Computer Vision</li>
-            <li>Natural Language Processing</li>
-          </ul>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>Programming</h3>
-          <ul class="skill-list">
-            <li>Python (Advanced)</li>
-            <li>C/C++</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Git & Version Control</li>
-          </ul>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>Data & Tools</h3>
-          <ul class="skill-list">
-            <li>Pandas & NumPy</li>
-            <li>MySQL & SQLite</li>
-            <li>Django Framework</li>
-            <li>Data Visualization</li>
-            <li>Statistical Analysis</li>
-          </ul>
+        <div class="about-image" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Coding workspace">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="section" style="background-color: #f0f9ff;">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Innovative solutions combining AI, ML, and real-world applications</p>
-      </div>
+      <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
       <div class="projects-grid">
-        <div class="project-card fade-in">
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="project-image">
-            <i class="fas fa-comments"></i>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ClusSumm Project">
           </div>
           <div class="project-content">
             <h3 class="project-title">ClusSumm</h3>
-            <p class="project-description">Advanced multimodal sentiment-based text summarizer that analyzes emotional context to generate more meaningful and contextually relevant summaries.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">Sentiment Analysis</span>
+            <p class="project-description">
+              A multimodal sentiment-based summarizer that combines text and visual data to generate comprehensive summaries.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
             </div>
             <div class="project-links">
               <a href="#" class="project-link">
-                <i class="fab fa-github"></i>
-                Code
+                <i class="fas fa-code"></i> Code
               </a>
               <a href="#" class="project-link">
-                <i class="fas fa-external-link-alt"></i>
-                Demo
+                <i class="fas fa-external-link-alt"></i> Demo
               </a>
             </div>
           </div>
         </div>
-
-        <div class="project-card fade-in">
+        
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="project-image">
-            <i class="fas fa-chart-line"></i>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Literacy Forecasting Project">
           </div>
           <div class="project-content">
             <h3 class="project-title">Literacy Forecasting</h3>
-            <p class="project-description">Machine Learning and hybrid models for predicting Bangladesh literacy rates, providing insights for educational policy and resource allocation.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Time Series</span>
-              <span class="tech-tag">Statistical Modeling</span>
+            <p class="project-description">
+              Using ML/Hybrid models for Bangladesh literacy rate prediction to aid educational policy planning.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Time Series</span>
+              <span class="project-tag">Forecasting</span>
+              <span class="project-tag">Python</span>
             </div>
             <div class="project-links">
               <a href="#" class="project-link">
-                <i class="fab fa-github"></i>
-                Code
+                <i class="fas fa-code"></i> Code
               </a>
               <a href="#" class="project-link">
-                <i class="fas fa-file-pdf"></i>
-                Paper
+                <i class="fas fa-chart-line"></i> Results
               </a>
             </div>
           </div>
         </div>
-
-        <div class="project-card fade-in">
+        
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
           <div class="project-image">
-            <i class="fas fa-fish"></i>
+            <img src="https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Shrimp Research Project">
           </div>
           <div class="project-content">
-            <h3 class="project-title">Shrimp Population Research</h3>
-            <p class="project-description">Innovative approach to shrimp population estimation using machine learning and underwater computer vision for sustainable aquaculture management.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Computer Vision</span>
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">Image Processing</span>
-              <span class="tech-tag">Marine Biology</span>
+            <h3 class="project-title">Shrimp Population Estimation</h3>
+            <p class="project-description">
+              Shrimp population estimation with ML & underwater vision to support sustainable aquaculture practices.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Agriculture</span>
             </div>
             <div class="project-links">
               <a href="#" class="project-link">
-                <i class="fab fa-github"></i>
-                Code
+                <i class="fas fa-code"></i> Code
               </a>
               <a href="#" class="project-link">
-                <i class="fas fa-microscope"></i>
-                Research
+                <i class="fas fa-file-alt"></i> Paper
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Research Publications</h2>
+      
+      <div class="research-item" data-aos="fade-up">
+        <h3 class="research-title">Multimodal Sentiment Analysis for Bengali Content</h3>
+        <div class="research-meta">
+          <span><i class="fas fa-calendar-alt"></i> June 2023</span>
+          <span><i class="fas fa-book"></i> Journal of AI Research</span>
+        </div>
+        <p class="research-description">
+          This paper presents a novel approach to sentiment analysis for Bengali content by combining textual and visual 
+          modalities. Our model achieves state-of-the-art performance on benchmark datasets while addressing the unique 
+          challenges of low-resource languages.
+        </p>
+        <a href="#" class="research-link">
+          <i class="fas fa-external-link-alt"></i> Read Publication
+        </a>
+      </div>
+      
+      <div class="research-item" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="research-title">Deep Learning Approaches for Underwater Object Detection</h3>
+        <div class="research-meta">
+          <span><i class="fas fa-calendar-alt"></i> March 2023</span>
+          <span><i class="fas fa-book"></i> IEEE Access</span>
+        </div>
+        <p class="research-description">
+          We propose a modified YOLO architecture specifically optimized for underwater object detection tasks, with 
+          applications in marine biology and aquaculture. The model demonstrates improved performance in low-visibility 
+          conditions common in underwater environments.
+        </p>
+        <a href="#" class="research-link">
+          <i class="fas fa-external-link-alt"></i> Read Publication
+        </a>
+      </div>
+      
+      <div class="research-item" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="research-title">Hybrid Models for Socio-Economic Forecasting</h3>
+        <div class="research-meta">
+          <span><i class="fas fa-calendar-alt"></i> January 2023</span>
+          <span><i class="fas fa-book"></i> Springer Nature</span>
+        </div>
+        <p class="research-description">
+          This research explores the combination of traditional statistical methods with machine learning approaches 
+          for more accurate socio-economic forecasting in developing countries, with a focus on educational metrics.
+        </p>
+        <a href="#" class="research-link">
+          <i class="fas fa-external-link-alt"></i> Read Publication
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section" style="background-color: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Education & Skills</h2>
+      <div class="resume-container">
+        <!-- Education Column -->
+        <div class="resume-column" data-aos="fade-right">
+          <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Education</h3>
+          
+          <div class="resume-item">
+            <span class="resume-date">2021 - Present</span>
+            <h4 class="resume-title">B.Sc. in Computer Science and Engineering</h4>
+            <p class="resume-subtitle">BRAC University</p>
+            <p>
+              Specializing in Artificial Intelligence and Machine Learning. Coursework includes Advanced Algorithms, 
+              Neural Networks, Natural Language Processing, and Computer Vision.
+            </p>
+          </div>
+          
+          <div class="resume-item">
+            <span class="resume-date">2018 - 2020</span>
+            <h4 class="resume-title">Higher Secondary Certificate</h4>
+            <p class="resume-subtitle">Notre Dame College, Dhaka</p>
+            <p>
+              Science Division. Achieved GPA 5.00 in both SSC and HSC examinations.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Skills Column -->
+        <div class="resume-column" data-aos="fade-left">
+          <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Technical Skills</h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-title">Programming Languages</h4>
+            <div class="skills-list">
+              <span class="skill">Python</span>
+              <span class="skill">C</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">SQL</span>
+            </div>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-title">Frameworks & Libraries</h4>
+            <div class="skills-list">
+              <span class="skill">TensorFlow</span>
+              <span class="skill">PyTorch</span>
+              <span class="skill">Scikit-learn</span>
+              <span class="skill">Pandas</span>
+              <span class="skill">Numpy</span>
+              <span class="skill">Django</span>
+              <span class="skill">React</span>
+            </div>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-title">Tools & Technologies</h4>
+            <div class="skills-list">
+              <span class="skill">Git</span>
+              <span class="skill">Docker</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">MongoDB</span>
+              <span class="skill">AWS</span>
+              <span class="skill">Linux</span>
+            </div>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-title">Certifications</h4>
+            <p>
+              <strong>Machine Learning</strong> - Stanford University (Coursera)<br>
+              <strong>Deep Learning Specialization</strong> - deeplearning.ai<br>
+              <strong>Data Science Fundamentals</strong> - IBM
+            </p>
           </div>
         </div>
       </div>
@@ -832,63 +913,123 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2 class="section-title" style="color: white;">Let's Connect</h2>
-        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Ready to collaborate on exciting AI/ML projects</p>
-      </div>
-      <div class="contact-content">
-        <div class="contact-info fade-in">
-          <h3>Get In Touch</h3>
-          <p>I'm always interested in discussing new opportunities, collaborating on research projects, or simply connecting with fellow AI enthusiasts.</p>
-          <ul class="contact-methods">
-            <li>
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-envelope"></i>
-              <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a>
-            </li>
-            <li>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>tanzinabdul@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Dhaka, Bangladesh</span>
-            </li>
-            <li>
-              <i class="fas fa-graduation-cap"></i>
-              <span>BRAC University</span>
-            </li>
-          </ul>
-          <div class="social-links">
-            <a href="https://github.com/TanzinAbdul" class="social-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tanzin-abdul/" class="social-link" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://sites.google.com/view/tanzin/home" class="social-link" target="_blank">
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-globe"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" class="social-link" target="_blank">
-              <i class="fas fa-file-pdf"></i>
-            </a>
+            </div>
+            <div>
+              <h4>Online Presence</h4>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <a href="https://github.com/TanzinAbdul" target="_blank" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tanzin-abdul/" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://sites.google.com/view/tanzin/home" target="_blank" class="social-link">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contact-form fade-in">
-          <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 20px; text-align: center;">
-            <i class="fas fa-rocket" style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary);"></i>
-            <h3 style="margin-bottom: 1rem;">Ready to Innovate?</h3>
-            <p style="margin-bottom: 2rem; opacity: 0.8;">Let's build the future of AI together. Reach out to discuss opportunities, collaborations, or just to connect!</p>
-            <a href="mailto:tanzinabdul@gmail.com" class="btn btn-primary">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
-            </a>
-          </div>
+        
+        <div class="contact-form" data-aos="fade-left">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <p>&copy; 2025 Mohammed Abdul Al Arafat Tanzin. Crafted with passion for AI innovation.</p>
+      <div class="footer-content">
+        <a href="#" class="logo" style="color: white; font-size: 1.8rem;">Tanzin</a>
+        <p style="margin: 1.5rem 0;">
+          AI/ML Researcher & Developer passionate about creating impactful solutions.
+        </p>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#research" class="footer-link">Research</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <p class="copyright">
+          &copy; 2023 Mohammed Abdul Al Arafat Tanzin. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS animation
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        if (navLinks.classList.contains('show')) {
+          navLinks.classList.remove
