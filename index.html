@@ -681,20 +681,31 @@
           </article>
 
           <!-- Undergraduate Thesis card (also in Projects area) -->
-          <!-- Undergraduate Thesis card (also in Projects area) -->
-            <article class="project-card thesis-card" role="listitem" aria-labelledby="t1">
-            <div class="thesis-meta">
-                <div class="badge-small">T1</div>
-                <div style="font-weight:800">ReCAN — Lightweight Residual Channel Attention Network</div>
+          <article class="project-card thesis-card" role="listitem" aria-labelledby="t1">
+            <div class="project-thumb" aria-hidden="true">
+              <div style="font-size:16px; font-weight:700; color:var(--primary);">
+                Undergraduate Thesis Project
+              </div>
             </div>
-            <div style="font-weight:700;color:var(--muted);margin-bottom:6px">Completed — Oct 2025 • Grade: A (95%)</div>
+            
+            <div class="project-title" id="t1">ReCAN — Lightweight Residual Channel Attention Network</div>
+            
+            <div style="font-weight:700;color:var(--muted);margin-bottom:6px">
+              Completed — Oct 2025 • Grade: A (95%)
+            </div>
+            
             <div style="color:var(--muted);font-size:0.94rem;margin-bottom:8px">
-                Designed ReCAN: an efficient CNN-attention hybrid using ResNet-18 base + alternating skip connections and channel attention. Achieves 8–12% higher accuracy while remaining lightweight (~14.47M params) across MedMNIST datasets.
+              Designed ReCAN: an efficient CNN-attention hybrid using ResNet-18 base + alternating skip connections and channel attention. 
+              Achieves 8–12% higher accuracy while remaining lightweight (~14.47M params) across MedMNIST datasets.
             </div>
-            <button class="btn btn-outline read-abstract" data-title="ReCAN — Lightweight Residual Channel Attention Network" data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art re- sults on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential lay- ers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that care- ful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.">
-                <i class="fas fa-book-open"></i> Read Abstract
+            
+            <button class="btn btn-outline read-abstract" 
+              data-title="ReCAN — Lightweight Residual Channel Attention Network" 
+              data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art results on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential layers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that careful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.">
+              <i class="fas fa-book-open"></i> Read Abstract
             </button>
-            </article>
+          </article>
+
         </div>
       </div>
     </section>
