@@ -443,22 +443,48 @@
 
     /* Responsive */
     @media (max-width:1060px){
-      .hero-inner{grid-template-columns: 1fr; padding:20px}
-      .hero-left{order:2}
-      .hero-right{order:1}
-      .about-grid{grid-template-columns:1fr}
-      .skills-grid{grid-template-columns:repeat(2,1fr)}
-      .contact-grid{grid-template-columns:1fr}
-      .certifications-grid{grid-template-columns:1fr}
-      .nav-links{display:none}
-      .menu-toggle{display:block}
-    }
+  .hero-inner{grid-template-columns: 1fr; padding:20px}
+  .hero-left{order:1} /* Changed from 2 to 1 */
+  .hero-right{order:2} /* Changed from 1 to 2 */
+  .about-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .certifications-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .menu-toggle{display:block}
+}
     @media (max-width:640px){
       .skills-grid{grid-template-columns:1fr}
       .pub-grid{grid-template-columns:1fr}
       .projects-grid{grid-template-columns:1fr}
       .certifications-grid{grid-template-columns:1fr}
     }
+
+    @media (max-width:1060px){
+  .hero-inner{grid-template-columns: 1fr; padding:20px}
+  .hero-left{order:1; padding:12px;}
+  .hero-right{order:2; padding:12px 12px 24px;}
+  .profile-wrap{
+    width: 180px;
+    height: 180px;
+    transform: translateY(0);
+    margin-bottom: 8px;
+  }
+  .hero-name{margin-top:0}
+  
+  /* Add these lines for smaller button text */
+  .hero-cta .btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+  
+  .about-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .certifications-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .menu-toggle{display:block}
+}
   </style>
 </head>
 <body>
