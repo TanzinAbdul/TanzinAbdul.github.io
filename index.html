@@ -3,489 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mohammed Abdul Al Arafat Tanzin — AI/ML Researcher</title>
+  <title>Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher</title>
 
   <!-- Fonts & Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --primary:#2563eb;
-      --primary-dark:#1e40af;
-      --muted:#64748b;
-      --bg:#f7f8fb;
-      --card:#ffffff;
-      --glass: rgba(255,255,255,0.6);
-      --radius:14px;
-      --shadow-sm: 0 6px 12px rgba(16,24,40,0.06);
-      --shadow-md: 0 10px 25px rgba(16,24,40,0.08);
-      --maxw:1200px;
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:#0f172a;
-      background: linear-gradient(180deg, #f5f7fb 0%, var(--bg) 100%);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
-
-    a{color:var(--primary);text-decoration:none}
-    img{max-width:100%;display:block}
-
-    /* --- NAV --- */
-    .nav {
-      position:fixed;
-      top:0;
-      left:0;
-      right:0;
-      z-index:1200;
-      padding:12px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      backdrop-filter: blur(6px);
-      background: rgba(255,255,255,0.55);
-      border-bottom:1px solid rgba(15,23,42,0.04);
-    }
-    .nav-inner{
-      width:100%;
-      max-width:var(--maxw);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
-    .brand{font-weight:700;color:var(--primary);font-size:1.05rem}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    .nav-links a{font-weight:600;color:var(--muted);font-size:0.92rem}
-    .nav-links a:hover{color:var(--primary)}
-    .menu-toggle{display:none;background:none;border:0;font-size:1.25rem}
-
-    /* --- HERO (compact & denser) --- */
-    .hero {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:88px 20px 48px;
-      position:relative;
-      overflow:visible;
-      max-width:100%;
-    }
-    .hero-inner{
-      width:100%;
-      max-width:var(--maxw);
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.92));
-      border-radius:16px;
-      box-shadow:var(--shadow-md);
-      display:grid;
-      grid-template-columns: 420px 1fr;
-      gap:1.5rem;
-      align-items:center;
-      padding:28px;
-    }
-
-    /* Left hero panel (image + name) */
-    .hero-left{
-      position:relative;
-      padding:18px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .profile-wrap{
-      width:220px;
-      height:220px;
-      border-radius:50%;
-      overflow:hidden;
-      border:6px solid rgba(37,99,235,0.08);
-      box-shadow: 0 15px 35px rgba(37,99,235,0.08);
-      transform: translateY(-28px);
-      background: linear-gradient(135deg,#eef2ff,#f0f9ff);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .profile-wrap img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-    }
-
-    .hero-name{
-      text-align:center;
-      margin-top:-10px;
-      line-height:1.05;
-    }
-    .hero-name h1{
-      font-size:1.5rem;
-      font-weight:800;
-      letter-spacing:-0.01em;
-      margin-bottom:6px;
-    }
-    .hero-name .role{
-      color:var(--muted);
-      font-weight:600;
-      font-size:0.95rem;
-    }
-
-    .hero-cta{
-      display:flex;
-      gap:10px;
-      margin-top:6px;
-    }
-    .btn{
-      padding:10px 14px;
-      border-radius:10px;
-      font-weight:700;
-      border:0;
-      cursor:pointer;
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      justify-content:center;
-      transition: all 0.2s ease;
-    }
-    .btn-primary{background:var(--primary);color:white;box-shadow: 0 8px 20px rgba(37,99,235,0.12)}
-    .btn-primary:hover{background:var(--primary-dark);transform: translateY(-2px);box-shadow: 0 12px 25px rgba(37,99,235,0.18)}
-    .btn-outline{background:transparent;border:1.5px solid rgba(15,23,42,0.06);color:var(--muted)}
-    .btn-outline:hover{background:rgba(15,23,42,0.03);border-color:rgba(15,23,42,0.1)}
-    
-    /* Enhanced Download CV button */
-    .btn-cv {
-      background: linear-gradient(135deg, #4f46e5, #7c3aed);
-      color: white;
-      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
-      font-weight: 700;
-      padding: 10px 18px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-    }
-    .btn-cv:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
-      background: linear-gradient(135deg, #4338ca, #6d28d9);
-    }
-
-    /* Right hero panel (compact about summary) */
-    .hero-right{
-      padding:18px 22px;
-      position:relative;
-    }
-
-    /* diagonal/curved divider visual */
-    .hero-right::before{
-      content:'';
-      position:absolute;
-      left:-40px;
-      top:0;
-      bottom:0;
-      width:40px;
-      background: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(8,145,178,0.04));
-      clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-      border-top-left-radius:12px;
-      border-bottom-left-radius:12px;
-      pointer-events:none;
-      opacity:0.95;
-    }
-
-    .hero-summary h3{font-size:1.08rem;margin-bottom:8px}
-    .hero-summary p{color:var(--muted);margin-bottom:12px}
-    .hero-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:0.92rem;color:var(--muted)}
-
-    .stat-pill{
-      background:rgba(15,23,42,0.04);
-      padding:8px 10px;border-radius:10px;font-weight:700;
-      min-width:90px;text-align:center;
-    }
-
-    /* --- MAIN SECTIONS --- */
-    .section{padding:36px 20px}
-    .container{max-width:var(--maxw);margin:0 auto}
-
-    .section-header{
-      display:flex;
-      align-items:baseline;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:18px;
-    }
-    .section-title{font-size:1.15rem;font-weight:800}
-    .section-sub{color:var(--muted);font-weight:600;font-size:0.95rem}
-
-    /* About layout - two balanced panels with shape divider */
-    .about-grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:18px;
-      align-items:start;
-    }
-    .about-card{
-      background:var(--card);
-      padding:18px;border-radius:12px;box-shadow:var(--shadow-sm);
-      border:1px solid rgba(15,23,42,0.03);
-    }
-    .about-bio h3{margin-bottom:8px;font-size:1.02rem}
-    .about-bio p{color:var(--muted);margin-bottom:10px}
-    .about-stats{display:flex;gap:10px;flex-wrap:wrap}
-    .about-stat{background:linear-gradient(90deg,#fff,#fbfdff);padding:10px;border-radius:10px;min-width:88px;text-align:center;font-weight:700;color:var(--primary)}
-
-    /* Skills grid compact */
-    .skills-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-    }
-    .skill-card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.03);font-weight:700;color:var(--muted);min-height:96px}
-
-    /* Projects / Entrepreneurial Experience */
-    .projects-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:14px;
-    }
-    .project-card{
-      background:var(--card);border-radius:12px;padding:12px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm);
-      display:flex;flex-direction:column;gap:10px;
-    }
-    .project-thumb{
-      width:100%;height:140px;border-radius:8px;overflow:hidden;background:#eef2ff;display:flex;align-items:center;justify-content:center;
-      border:1px solid rgba(15,23,42,0.03);
-    }
-    .project-thumb img{width:100%;height:100%;object-fit:cover}
-    .project-title{font-weight:800;font-size:1rem}
-    .project-desc{color:var(--muted);font-size:0.92rem;flex:1}
-    .project-actions{display:flex;gap:8px;align-items:center}
-
-    /* Publications - 2 column */
-    .pub-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-    .pub-card{
-      background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm);
-    }
-    .pub-badge{background:var(--primary);color:white;padding:6px 8px;border-radius:8px;font-weight:800;font-size:0.85rem}
-    .pub-title{font-weight:800;margin:8px 0 6px}
-    .pub-meta{color:var(--muted);font-size:0.92rem;margin-bottom:8px}
-    .pub-links a{margin-right:10px;font-weight:700;color:var(--primary);font-size:0.9rem}
-
-    /* Improved publication tags */
-    .pub-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 6px 10px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      margin-right: 8px;
-    }
-    .pub-tag-journal {
-      background: linear-gradient(135deg, #10b981, #059669);
-      color: white;
-    }
-    .pub-tag-conference {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
-      color: white;
-    }
-
-    /* Thesis card */
-    .thesis-card{background:linear-gradient(180deg,#fff,#fbfdff);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm)}
-    .thesis-meta{display:flex;gap:12px;align-items:center;margin-bottom:8px}
-    .badge-small{background:#0f172a;color:white;padding:6px 8px;border-radius:8px;font-weight:700;font-size:0.85rem}
-
-    /* Contact & Footer */
-    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:12px}
-    .contact-card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.04)}
-    footer{padding:18px 20px;text-align:center;color:var(--muted);font-weight:600}
-
-    /* Certifications Section */
-    .certifications-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-      gap: 16px;
-    }
-    .cert-card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(15,23,42,0.04);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .cert-header {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    .cert-icon {
-      font-size: 1.5rem;
-      color: var(--primary);
-      flex-shrink: 0;
-    }
-    .cert-details {
-      flex: 1;
-    }
-    .cert-name {
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .cert-org {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 6px;
-    }
-    .cert-meta {
-      display: flex;
-      gap: 12px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .cert-link {
-      margin-top: 8px;
-    }
-
-    /* Honors & Awards Section */
-    .honors-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .honor-item {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(15,23,42,0.04);
-    }
-    .honor-title {
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .honor-details {
-      color: var(--muted);
-      font-size: 0.92rem;
-      line-height: 1.5;
-    }
-
-    /* Improved Abstract Modal */
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2000;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-    .modal-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-    .modal-content {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      max-width: 700px;
-      width: 90%;
-      max-height: 80vh;
-      overflow-y: auto;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-      transform: translateY(20px);
-      transition: transform 0.3s ease;
-    }
-    .modal-overlay.active .modal-content {
-      transform: translateY(0);
-    }
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(15,23,42,0.08);
-    }
-    .modal-title {
-      font-weight: 800;
-      font-size: 1.2rem;
-    }
-    .modal-close {
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-      color: var(--muted);
-    }
-    .modal-body {
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    /* Responsive */
-    @media (max-width:1060px){
-  .hero-inner{grid-template-columns: 1fr; padding:20px}
-  .hero-left{order:1} /* Changed from 2 to 1 */
-  .hero-right{order:2} /* Changed from 1 to 2 */
-  .about-grid{grid-template-columns:1fr}
-  .skills-grid{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr}
-  .certifications-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
-  .menu-toggle{display:block}
-}
-    @media (max-width:640px){
-      .skills-grid{grid-template-columns:1fr}
-      .pub-grid{grid-template-columns:1fr}
-      .projects-grid{grid-template-columns:1fr}
-      .certifications-grid{grid-template-columns:1fr}
-    }
-
-    @media (max-width:1060px){
-  .hero-inner{grid-template-columns: 1fr; padding:20px}
-  .hero-left{order:1; padding:12px;}
-  .hero-right{order:2; padding:12px 12px 24px;}
-  .profile-wrap{
-    width: 180px;
-    height: 180px;
-    transform: translateY(0);
-    margin-bottom: 8px;
-  }
-  .hero-name{margin-top:0}
   
-  /* Add these lines for smaller button text */
-  .hero-cta .btn {
-    font-size: 0.85rem;
-    padding: 8px 12px;
-  }
-  
-  .about-grid{grid-template-columns:1fr}
-  .skills-grid{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr}
-  .certifications-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
-  .menu-toggle{display:block}
-}
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -497,6 +22,7 @@
         <div class="nav-links" id="navLinksDesktop">
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#research">Research</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#certifications">Certifications</a>
@@ -518,13 +44,12 @@
       <div class="hero-inner container" role="region" aria-labelledby="heroHeading">
         <div class="hero-left" aria-hidden="false">
           <div class="profile-wrap" title="Tanzin's photo">
-            <!-- Replace with your real portrait file; fallback used if missing -->
             <img src="Tanzin.jpg" alt="Mohammed Abdul Al Arafat Tanzin portrait" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=60'">
           </div>
 
           <div class="hero-name">
             <h1 id="heroHeading">Mohammed Abdul Al Arafat Tanzin</h1>
-            <div class="role">AI / ML Researcher & Engineer</div>
+            <div class="role">Generative AI Researcher | MPhil in AI</div>
           </div>
 
           <div class="hero-cta">
@@ -535,17 +60,18 @@
 
         <div class="hero-right">
           <div class="hero-summary">
-            <h3>Advancing AI with practical research & engineering</h3>
-            <p>I design compact, performant models and build robust ML systems with a focus on real-world application — from healthcare imaging to sustainability and time-series forecasting.</p>
+            <h3>Advancing Generative AI for Edge Deployment</h3>
+            <p>My research focuses on Lightweight Diffusion Transformers, accelerated sampling techniques, and model compression to enable real-time generative vision on resource-constrained edge devices. I specialize in Diffusion Models, Generative AI, Agentic AI, and Large Language Models.</p>
 
             <div class="hero-meta" aria-hidden="false">
-              <div class="stat-pill">Research — AI/ML</div>
-              <div class="stat-pill">BRAC University</div>
-              <div class="stat-pill">Publications & Projects</div>
+              <div class="stat-pill">Diffusion Models</div>
+              <div class="stat-pill">Generative AI</div>
+              <div class="stat-pill">Agentic AI</div>
+              <div class="stat-pill">LLMs</div>
             </div>
 
             <div style="margin-top:12px;color:var(--muted);font-weight:600">
-              Interested in collaboration, PhD opportunities, and applied ML research.
+              Currently pursuing MPhil in AI at Universiti Teknologi Malaysia, Kuala Lumpur. Open to research collaborations and PhD opportunities.
             </div>
           </div>
         </div>
@@ -558,43 +84,93 @@
         <div class="section-header">
           <div>
             <div class="section-title" id="aboutTitle">About Me</div>
-            <div class="section-sub">Dedicated to building practical AI systems and publishing reproducible research</div>
+            <div class="section-sub">Generative AI Researcher focused on efficient on-device intelligence</div>
           </div>
         </div>
 
         <div class="about-grid" role="region" aria-label="About content">
           <div class="about-card about-bio">
-            <h3>Researcher & Innovation Driver</h3>
-            <p>I am a Computer Science and Engineering student at BRAC University with deep expertise in Artificial Intelligence and Machine Learning. My work spans emotion detection, sentiment analysis, natural language processing, and computer vision. I aim for reproducible research, robust baselines, and compact models suitable for constrained hardware.</p>
+            <h3>Researcher & Innovator</h3>
+            <p>I am a Generative AI researcher currently pursuing my MPhil in Artificial Intelligence at Universiti Teknologi Malaysia (UTM) in Kuala Lumpur. I hold a B.Sc. in Computer Science and Engineering from BRAC University. My research focuses on Diffusion Models, Generative AI, Agentic AI, and Large Language Models, with a particular emphasis on deploying these capabilities on resource-constrained edge devices.</p>
 
             <div class="about-stats" style="margin-top:10px">
-              <div class="about-stat">3+ yrs exp</div>
-              <div class="about-stat">5+ Projects</div>
+              <div class="about-stat">MPhil Researcher</div>
+              <div class="about-stat">Diffusion Models</div>
               <div class="about-stat">4+ Publications</div>
             </div>
 
-            <p style="margin-top:12px;color:var(--muted)">Currently seeking collaborative research roles and PhD opportunities in applied machine learning and medical imaging.</p>
+            <p style="margin-top:12px;color:var(--muted)">Currently seeking collaborative research opportunities and PhD positions in generative AI, efficient deep learning, and edge AI.</p>
           </div>
 
           <div class="about-card">
             <h3 style="margin-bottom:8px">Quick facts</h3>
             <ul style="list-style:none;color:var(--muted);font-weight:600;line-height:1.7;padding-left:0">
-              <li><strong>Location:</strong> Dhaka, Bangladesh</li>
-              <li><strong>Education:</strong> B.Sc. in CSE — BRAC University</li>
+              <li><strong>Location:</strong> Kuala Lumpur, Malaysia</li>
+              <li><strong>Education:</strong> MPhil in AI — Universiti Teknologi Malaysia (UTM)</li>
+              <li><strong>Previous:</strong> B.Sc. in CSE — BRAC University (Graduated)</li>
               <li><strong>Email:</strong> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li>
-              
             </ul>
 
             <div style="margin-top:14px">
-              <strong style="display:block;margin-bottom:8px">Selected Tools & Techniques</strong>
+              <strong style="display:block;margin-bottom:8px">Research Focus</strong>
               <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">PyTorch</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">TensorFlow</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">CV & NLP</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Python</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">React</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Diffusion Models</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Generative AI</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Agentic AI</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">LLMs</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Edge AI</div>
+                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Model Compression</div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH (MPhil) -->
+    <section id="research" class="section" aria-labelledby="researchTitle" style="background:linear-gradient(180deg,#f8fbff,#fbfdff);">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-title" id="researchTitle">MPhil Research</div>
+            <div class="section-sub">Lightweight Diffusion Transformers for On-Device Generative Vision</div>
+          </div>
+        </div>
+
+        <div class="research-card" style="background:var(--card);border-radius:16px;padding:24px;box-shadow:var(--shadow-md);border:1px solid rgba(37,99,235,0.08)">
+          <div style="display:grid;grid-template-columns:1fr auto;gap:20px;flex-wrap:wrap;">
+            <div>
+              <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--primary)">Research Overview</h3>
+              <p style="color:var(--muted);margin-bottom:16px;line-height:1.6">This research addresses the critical challenge of deploying Generative AI on resource-constrained edge devices. Despite the success of Diffusion Models and Vision Transformers in cloud environments, their massive computational requirements prevent real-time deployment on smartphones, UAVs, and IoT cameras. This work develops Lightweight Diffusion Transformers (DiT) with accelerated sampling and compression techniques to enable real-time, high-fidelity generative vision at the edge.</p>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px">
+            <div style="background:#f8faff;padding:16px;border-radius:12px">
+              <i class="fas fa-microchip" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
+              <h4 style="margin-bottom:8px">Objective 1</h4>
+              <p style="color:var(--muted);font-size:0.92rem">Design a Lightweight Diffusion Transformer architecture optimized for low-latency inference on mobile NPUs.</p>
+            </div>
+            <div style="background:#f8faff;padding:16px;border-radius:12px">
+              <i class="fas fa-compress-alt" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
+              <h4 style="margin-bottom:8px">Objective 2</h4>
+              <p style="color:var(--muted);font-size:0.92rem">Investigate knowledge distillation and INT4 quantization to reduce memory footprint without significant loss in visual fidelity.</p>
+            </div>
+            <div style="background:#f8faff;padding:16px;border-radius:12px">
+              <i class="fas fa-tachometer-alt" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
+              <h4 style="margin-bottom:8px">Objective 3</h4>
+              <p style="color:var(--muted);font-size:0.92rem">Develop an accelerated sampling pipeline that reduces diffusion iterations to under 5 steps for real-time applications.</p>
+            </div>
+            <div style="background:#f8faff;padding:16px;border-radius:12px">
+              <i class="fas fa-drone" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
+              <h4 style="margin-bottom:8px">Objective 4</h4>
+              <p style="color:var(--muted);font-size:0.92rem">Validate the proposed lightweight model in a low-light generative reconstruction case study for UAV-based surveillance.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;padding:16px;background:linear-gradient(135deg,#eef2ff,#f0f9ff);border-radius:12px">
+            <h4 style="margin-bottom:8px">Research Significance</h4>
+            <p style="color:var(--muted);font-size:0.94rem">This research contributes to Ubiquitous Broadband Access Networks by shifting computational load from network core to the extreme edge. It addresses privacy concerns by ensuring data never leaves the device, and provides a pathway toward "Passive Intelligence" for robotics and UAV industries, where high-resolution environmental reconstruction can be achieved using low-cost sensors and lightweight software.</p>
           </div>
         </div>
       </div>
@@ -606,14 +182,29 @@
         <div class="section-header">
           <div>
             <div class="section-title" id="skillsTitle">Technical Expertise</div>
-            <div class="section-sub">Comprehensive skill set for modern AI/ML research</div>
+            <div class="section-sub">Specialized skills in generative AI and deep learning</div>
           </div>
         </div>
 
         <div class="skills-grid" role="list">
           <div class="skill-card" role="listitem">
-            <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Machine Learning</div>
-            <div style="color:var(--muted);font-weight:600">Deep Learning, CNNs, Attention, Transfer Learning, Model Compression</div>
+            <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Generative AI</div>
+            <div style="color:var(--muted);font-weight:600">Diffusion Models, Transformers, GANs, VAEs, Autoregressive Models</div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Agentic AI & LLMs</div>
+            <div style="color:var(--muted);font-weight:600">LangChain, LLM Agents, RAG, Prompt Engineering, Fine-tuning</div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Edge AI & Optimization</div>
+            <div style="color:var(--muted);font-weight:600">Model Compression, Quantization, Knowledge Distillation, NPU Optimization</div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Deep Learning</div>
+            <div style="color:var(--muted);font-weight:600">PyTorch, TensorFlow, CNNs, Vision Transformers, Attention Mechanisms</div>
           </div>
 
           <div class="skill-card" role="listitem">
@@ -623,7 +214,7 @@
 
           <div class="skill-card" role="listitem">
             <div style="font-size:1rem;font-weight:800;margin-bottom:6px">Data & Tools</div>
-            <div style="color:var(--muted);font-weight:600">Pandas, NumPy, PyTorch, TensorFlow, Docker, Visualization</div>
+            <div style="color:var(--muted);font-weight:600">Pandas, NumPy, Docker, Linux, CUDA, ONNX, TensorRT</div>
           </div>
         </div>
       </div>
@@ -648,20 +239,18 @@
             <div class="project-title" id="p1">ClusSumm</div>
             <div class="project-desc">Advanced multimodal sentiment-based text summarizer that analyzes emotional context to generate more meaningful summaries.</div>
             <div class="project-actions">
-              <!-- <a class="btn btn-outline" href="#" aria-label="ClusSumm code"><i class="fab fa-github"></i> Code</a> -->
               <a class="btn btn-outline" href="https://drive.google.com/file/d/1yHnls6FS_wcYy7Hpxebm_CJvV1o3Hbpn/view" aria-label="ClusSumm paper"><i class="fas fa-file-pdf"></i> Paper</a>
               <a class="btn btn-outline" href="https://www.kaggle.com/datasets/tanzinabdul/coursera-learning-feedback-multiple-domain-7k" aria-label="ClusSumm dataset"><i class="fas fa-database"></i> Dataset</a>
             </div>
           </article>
 
-
-          <!-- New Sentiment Analysis Project -->
+          <!-- Sentiment Analysis Project -->
           <article class="project-card" role="listitem" aria-labelledby="p4">
             <div class="project-thumb" aria-hidden="true">
               <i class="fas fa-chart-bar" style="font-size:28px;color:var(--primary)"></i>
             </div>
             <div class="project-title" id="p4">Hybrid ML Framework for Audience Sentiment Analysis</div>
-            <div class="project-desc">Developed a hybrid ML framework combining sentiment analysis of user comments with engagement metrics to mitigate misleading like/dislike ratios, providing a reliable and transparent assessment of audience sentiment for digital content.</div>
+            <div class="project-desc">Developed a hybrid ML framework combining sentiment analysis of user comments with engagement metrics to mitigate misleading like/dislike ratios.</div>
             <div class="project-actions">
               <a class="btn btn-outline" href="https://drive.google.com/file/d/1Up6B8aSpBPtNti5BypQSCru3TCvI0jPf/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Pre-print</a>
               <a class="btn btn-outline" href="https://www.kaggle.com/datasets/tanzinabdul/bangla-movie-and-drama-comments-sentiment-dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
@@ -680,7 +269,7 @@
             </div>
           </article>
 
-          <!-- Undergraduate Thesis card (also in Projects area) -->
+          <!-- Undergraduate Thesis card -->
           <article class="project-card thesis-card" role="listitem" aria-labelledby="t1">
             <div class="project-thumb" aria-hidden="true">
               <div style="font-size:16px; font-weight:700; color:var(--primary);">
@@ -691,7 +280,7 @@
             <div class="project-title" id="t1">ReCAN — Lightweight Residual Channel Attention Network</div>
             
             <div style="font-weight:700;color:var(--muted);margin-bottom:6px">
-              Completed — Oct 2025 • Grade: A (95%)
+              Completed — Oct 2025 • Grade: A (95%) | BRAC University
             </div>
             
             <div style="color:var(--muted);font-size:0.94rem;margin-bottom:8px">
@@ -699,13 +288,15 @@
               Achieves 8–12% higher accuracy while remaining lightweight (~14.47M params) across MedMNIST datasets.
             </div>
             
-            <button class="btn btn-outline read-abstract" 
-              data-title="ReCAN — Lightweight Residual Channel Attention Network" 
-              data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art results on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential layers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that careful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.">
-              <i class="fas fa-book-open"></i> Read Abstract
-            </button>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://dspace.bracu.ac.bd/xmlui/handle/10361/27450" target="_blank"><i class="fas fa-file-pdf"></i> View Thesis</a>
+              <button class="btn btn-outline read-abstract" 
+                data-title="ReCAN — Lightweight Residual Channel Attention Network" 
+                data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art results on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential layers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that careful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.">
+                <i class="fas fa-book-open"></i> Read Abstract
+              </button>
+            </div>
           </article>
-
         </div>
       </div>
     </section>
@@ -721,7 +312,6 @@
         </div>
 
         <div class="certifications-grid" role="list">
-          <!-- Certificate 1 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-google"></i></div>
@@ -739,7 +329,6 @@
             </div>
           </div>
 
-          <!-- Certificate 2 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-coursera"></i></div>
@@ -757,7 +346,6 @@
             </div>
           </div>
 
-          <!-- Certificate 3 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-coursera"></i></div>
@@ -775,7 +363,6 @@
             </div>
           </div>
 
-          <!-- Certificate 4 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-coursera"></i></div>
@@ -793,7 +380,6 @@
             </div>
           </div>
 
-          <!-- Certificate 5 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-google"></i></div>
@@ -811,25 +397,6 @@
             </div>
           </div>
 
-          <!-- Certificate 6 -->
-          <div class="cert-card" role="listitem">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="fab fa-coursera"></i></div>
-              <div class="cert-details">
-                <div class="cert-name">Supervised Machine Learning: Regression and Classification</div>
-                <div class="cert-org">DeepLearning.AI, Stanford University</div>
-                <div class="cert-meta">
-                  <span>Issued: May 2024</span>
-                  <span>ID: B9RGVHHD5KVZ</span>
-                </div>
-                <div class="cert-link">
-                  <a href="https://www.coursera.org/account/accomplishments/records/B9RGVHHD5KVZ" target="_blank" class="btn btn-outline">View Credential</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 7 -->
           <div class="cert-card" role="listitem">
             <div class="cert-header">
               <div class="cert-icon"><i class="fab fa-hackerrank"></i></div>
@@ -842,60 +409,6 @@
                 </div>
                 <div class="cert-link">
                   <a href="https://www.hackerrank.com/certificates/3b26b4d4f409" target="_blank" class="btn btn-outline">View Credential</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 8 -->
-          <div class="cert-card" role="listitem">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="fab fa-hackerrank"></i></div>
-              <div class="cert-details">
-                <div class="cert-name">Python (Basic)</div>
-                <div class="cert-org">HackerRank</div>
-                <div class="cert-meta">
-                  <span>Issued: Dec 2023</span>
-                  <span>ID: A5FD4FCE5F4F</span>
-                </div>
-                <div class="cert-link">
-                  <a href="https://www.hackerrank.com/certificates/a5fd4fce5f4f" target="_blank" class="btn btn-outline">View Credential</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 9 -->
-          <div class="cert-card" role="listitem">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="fas fa-university"></i></div>
-              <div class="cert-details">
-                <div class="cert-name">Certificate of Participation</div>
-                <div class="cert-org">East West University</div>
-                <div class="cert-meta">
-                  <span>Issued: Apr 2024</span>
-                  <span>ID: —</span>
-                </div>
-                <div class="cert-link">
-                  <span class="btn btn-outline" style="opacity: 0.5; cursor: default;">No Link Available</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 10 -->
-          <div class="cert-card" role="listitem">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="fab fa-ieee"></i></div>
-              <div class="cert-details">
-                <div class="cert-name">Certificate of Contribution in ECCE 2025 Conference</div>
-                <div class="cert-org">IEEE</div>
-                <div class="cert-meta">
-                  <span>Issued: Feb 2025</span>
-                  <span>ID: 1040</span>
-                </div>
-                <div class="cert-link">
-                  <a href="https://drive.google.com/file/d/1bCYaH8l-LJlEVhNdcuGmQ1Q17iHmga_P/view" target="_blank" class="btn btn-outline">View Credential</a>
                 </div>
               </div>
             </div>
@@ -918,78 +431,16 @@
           <div class="honor-item">
             <div class="honor-title">Reviewer, SCOPE - ICLR 2025 Workshop</div>
             <div class="honor-details">
-              - Nominated by the Program Chair of SCOPE - ICLR 2025 as an urgent reviewer. (Feb 2025)
+              Nominated by the Program Chair of SCOPE - ICLR 2025 as an urgent reviewer. (Feb 2025)
             </div>
           </div>
           <div class="honor-item">
             <div class="honor-title">Runner-Up, National Soccer Bot Competition</div>
             <div class="honor-details">
-              - Issued by: Robotics Club of BRAC University, Dhaka, Bangladesh (Mar 2023)<br>
-              - Recognized for robotics and programming excellence, securing runner-up in a national competition.
+              Issued by: Robotics Club of BRAC University, Dhaka, Bangladesh (Mar 2023)<br>
+              Recognized for robotics and programming excellence, securing runner-up in a national competition.
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ENTREPRENEURIAL EXPERIENCE -->
-    <section id="entrepreneur" class="section" aria-labelledby="entrepreneurTitle" style="background:linear-gradient(180deg,#fbfdff,#f8fbff);">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="entrepreneurTitle">Entrepreneurial Experience</div>
-            <div class="section-sub">Founder — <strong>neXet Lab</strong> • <a href="https://nexetlab.vercel.app/" target="_blank" style="font-weight:800">Visit neXet Lab</a></div>
-          </div>
-        </div>
-
-        <p style="color:var(--muted);margin-bottom:12px">neXet Lab is a web & AI product studio focused on building performant websites and automation tools. Below are selected delivered projects.</p>
-
-        <div class="projects-grid" role="list" aria-label="neXet Lab delivered projects">
-          <!-- Provided project cards (extracted from user data) -->
-          <article class="project-card" role="listitem" aria-labelledby="nx1">
-            <div class="project-thumb">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="CM Rendering screenshot">
-            </div>
-            <div class="project-title" id="nx1">CM Rendering</div>
-            <div class="project-desc">A modern rendering and painting service website, focusing on high-quality rendering solutions.</div>
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://cmrendering.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" role="listitem" aria-labelledby="nx2">
-            <div class="project-thumb">
-              <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="Greenacre Auto Electrical">
-            </div>
-            <div class="project-title" id="nx2">Greenacre Auto Electrical</div>
-            <div class="project-desc">Professional auto electrical service website offering repair, maintenance, and installations for vehicles.</div>
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://www.greenacreautoelectrical.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" role="listitem" aria-labelledby="nx3">
-            <div class="project-thumb">
-              <!-- placeholder image -> replace with actual screenshot if available -->
-              <img src="/images/get_found_on_maps.png" alt="Get Found on Maps (screenshot)" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=60'">
-            </div>
-            <div class="project-title" id="nx3">Get Found on Maps</div>
-            <div class="project-desc">A modern React site for a digital agency with smooth animations and a custom hero banner.</div>
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://getfoundonmaps.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </article>
-
-          <article class="project-card" role="listitem" aria-labelledby="nx4">
-            <div class="project-thumb">
-              <img src="/images/central_grounds.jpg" alt="Central Grounds Espresso Bar" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=60'">
-            </div>
-            <div class="project-title" id="nx4">Central Grounds Espresso Bar</div>
-            <div class="project-desc">React site with clean UI and performance optimizations delivering a modern web experience.</div>
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://centralgroundsespressobar.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -1005,7 +456,6 @@
         </div>
 
         <div class="pub-grid" role="list">
-          <!-- J.1 -->
           <article class="pub-card" role="listitem" aria-labelledby="j1">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
               <span class="pub-tag pub-tag-journal"><i class="fas fa-landmark"></i> Journal</span>
@@ -1014,12 +464,11 @@
             <div class="pub-meta">Discover Sustainability — Q2 Journal • Accepted Dec 2024 (Published)</div>
             <div style="color:var(--muted);font-size:0.92rem;margin:8px 0">S. Kant, H. Ghosh, I. S. Rahat, M. M. R. Emon, M. J. Mashrafi, <strong>Mohammed Abdul Al Arafat Tanzin</strong>, S. N. Mohanty</div>
             <div class="pub-links">
-              <a href="https://link.springer.com/article/10.1007/s43621-025-01149-1" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Journal Link</a>
-              <button class="btn btn-outline read-abstract" data-title="Advanced Neural Network Architectures for Tomato Leaf Disease Diagnosis in Precision Agriculture" data-abstract="This study addresses the critical challenge of detecting and classifying tomato leaf diseases using advanced deep learning technologies, a pivotal step in enhancing productivity within precision agriculture. We developed a novel diagnostic system capable of categorizing tomato leaves into ten distinct classes—nine corresponding to specific diseases and one for healthy leaves. The system incorporates a dataset of 6,000 images, which underwent extensive preprocessing, including resizing to 256 × 256 pixels, grayscale conversion, normalization, masking, and augmentation, to optimize input quality for the model. Our approach stands out through the integration of state-of-the-art neural network architectures—VGG19, Vision Transformer (ViT), EfficientNetV2, ConvNeXt—and a novel hybrid model specifically designed to leverage the strengths of diverse architectures. Performance evaluation demonstrated that the hybrid model outperformed all individual architectures, achieving an exceptional classification accuracy of 98%, ensuring robust disease detection under varying conditions. To enhance interpretability, Grad-CAM and LIME techniques were employed, highlighting critical image regions and influential features for classification. This comprehensive and innovative approach not only deepens understanding in plant pathology through automated systems but also sets a new benchmark for future advancements in plant disease detection leveraging machine learning."><i class="fas fa-book-open"></i> Read Abstract</button>
+              <a href="https://link.springer.com/article/10.1007/s43621-025-01149-1" target="_blank"><i class="fas fa-external-link-alt"></i> Journal Link</a>
+              <button class="btn btn-outline read-abstract" data-title="Advanced Neural Network Architectures for Tomato Leaf Disease Diagnosis in Precision Agriculture" data-abstract="This study addresses the critical challenge of detecting and classifying tomato leaf diseases using advanced deep learning technologies..."><i class="fas fa-book-open"></i> Read Abstract</button>
             </div>
           </article>
 
-          <!-- C.1 -->
           <article class="pub-card" role="listitem" aria-labelledby="c1">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
               <span class="pub-tag pub-tag-conference"><i class="fas fa-graduation-cap"></i> Conference</span>
@@ -1028,13 +477,11 @@
             <div class="pub-meta">ECCE 2025 • Accepted Feb 2025</div>
             <div style="color:var(--muted);font-size:0.92rem;margin:8px 0"><strong>Mohammed Abdul Al Arafat Tanzin</strong>, Md. Jisan Mashrafi, Muhammad Iqbal Hossain</div>
             <div class="pub-links">
-              <a href="https://www.kaggle.com/datasets/tanzinabdul/socio-economic-dataset-of-bangladesh-1970-2023" target="_blank" class="pub-link"><i class="fas fa-database"></i> Dataset</a>
-              <a href="https://ieeexplore.ieee.org/abstract/document/11014044" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <button class="btn btn-outline read-abstract" data-title="Forecasting Literacy Development in Bangladesh: A Comparative Study of Machine Learning and Hybrid Approaches" data-abstract="In general in Bangladesh there have been some progress in literacy rates during the last couple of decades. Though literacy has persisted into the twenty first century as a major concern on the international level, it is still difficult to attain universal literacy. In this study, the possibility of using machine learning and mixed models to predict literacy in Bangladesh is considered, with a focus on the most accurate prediction of literacy levels by the end of the 2030 period. From a set of socio-economic and demographic indicators – including GDP, population, unemployment rate and life expectancy, we assessed few given predictive models. These were Linear Regression, SVR, Gradient Boosting, Random Forest, XGBoost, ANN, LSTM, CNN, RNN, GRU, LSTM + ARIMA, ANN + ARIMA, CNN + ARIMA, GRU + ARIMA. The hybrid models performed better than others in all parameters such as MAE, MSE, & R2 Score which again validate the ability of the hybrid models to capture temporal and non-linear dynamics inherent in the data. Further, based on the ARIMA-models analysis, literacy rate that was below 60% a decade ago is expected to reach nearly 90% in 2030. It also discusses how the policy-driven hybrid modeling can be useful and promotes data drive approach in perusing the SDG goals."><i class="fas fa-book-open"></i> Read Abstract</button>
+              <a href="https://ieeexplore.ieee.org/abstract/document/11014044" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+              <button class="btn btn-outline read-abstract" data-title="Forecasting Literacy Development in Bangladesh" data-abstract="This study considers the possibility of using machine learning and mixed models to predict literacy in Bangladesh..."><i class="fas fa-book-open"></i> Read Abstract</button>
             </div>
           </article>
 
-          <!-- C.2 -->
           <article class="pub-card" role="listitem" aria-labelledby="c2">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
               <span class="pub-tag pub-tag-conference"><i class="fas fa-graduation-cap"></i> Conference</span>
@@ -1043,12 +490,11 @@
             <div class="pub-meta">ISACC 2025 • Accepted Jan 2025</div>
             <div style="color:var(--muted);font-size:0.92rem;margin:8px 0">M. F. Shahriar, G. Tanbhir, A. M. R. Chy, <strong>Mohammed Abdul Al Arafat Tanzin</strong>, M. J. Mashrafi</div>
             <div class="pub-links">
-              <a href="https://ieeexplore.ieee.org/abstract/document/10969366" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <button class="btn btn-outline read-abstract" data-title="PhishVQC: Optimizing Phishing URL Detection with Correlation Based Feature Selection and Variational Quantum Classifier" data-abstract="Phishing URL detection is crucial in cybersecurity as malicious websites disguise themselves to steal sensitive information. Traditional machine learning techniques struggle to perform well in complex real-world scenarios due to large datasets and intricate patterns. Motivated by quantum computing, this paper proposes using Variational Quantum Classifiers (VQC) to enhance phishing URL detection. We present PhishVQC, a quantum model that combines quantum feature maps and variational ansatzes such as RealAmplitude and EfficientSU2. The model is evaluated across two experimental setups with varying dataset sizes and feature map repetitions. PhishVQC achieves a maximum macro average F1-score of 0.89, showing a 22% improvement over prior studies. This highlights the potential of quantum machine learning to improve phishing detection accuracy. The study also notes computational challenges, with execution wall times increasing as dataset size grows."><i class="fas fa-book-open"></i> Read Abstract</button>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10969366" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+              <button class="btn btn-outline read-abstract" data-title="PhishVQC" data-abstract="This paper proposes using Variational Quantum Classifiers (VQC) to enhance phishing URL detection..."><i class="fas fa-book-open"></i> Read Abstract</button>
             </div>
           </article>
 
-          <!-- C.3 -->
           <article class="pub-card" role="listitem" aria-labelledby="c3">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
               <span class="pub-tag pub-tag-conference"><i class="fas fa-graduation-cap"></i> Conference</span>
@@ -1057,8 +503,8 @@
             <div class="pub-meta">ECCE 2025 • Accepted Feb 2025</div>
             <div style="color:var(--muted);font-size:0.92rem;margin:8px 0">A. Sarkar, M. F. Shahriar, A. M. R. Chy, <strong>Mohammed Abdul Al Arafat Tanzin</strong>, M. J. Mashrafi, A. Fahim</div>
             <div class="pub-links">
-              <a href="https://ieeexplore.ieee.org/abstract/document/11013997" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
-              <button class="btn btn-outline read-abstract" data-title="Hybrid CNN & Random Forest for Predicting Water Level Fluctuations in Kaptai Reservoir" data-abstract="The Kaptai Reservoir, the country’s largest artificial freshwater body plays a vital role in hydroelectric power generation, flood control and agricultural support. However, its water levels are subject to fluctuations influenced by both climatic variations and increasing human consumption. Despite its crucial environmental impact there is a lack of research on the Kaptai Reservoir water body. The escalating effects of climate change present significant challenges to water resource management particularly in vulnerable regions such as Bangladesh. This paper presents a machine learning-based approach utilizing Convolutional Neural Networks (CNN) for feature extraction and Random Forest Regression (RFR) for Predicting water level fluctuations in the Kaptai Reservoir. Historical climate data from 2013 to 2022 including rainfall, temperature, and humidity were used to train the model. The CNN model effectively captured both temporal and spatial relationships in the water level time series while the RFR model demonstrated high prediction accuracy with a Root Mean Square Error (RMSE) of 0.5267 and a Mean Absolute Error (MAE) of 0.3128. These results highlight the model’s strong performance and its potential for real-time water management and decision-making aimed at mitigating the impacts of climate change on the reservoir. The findings offer valuable insights for policymakers working to ensure the long-term sustainability and resilience of water resources in Bangladesh."><i class="fas fa-book-open"></i> Read Abstract</button>
+              <a href="https://ieeexplore.ieee.org/abstract/document/11013997" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+              <button class="btn btn-outline read-abstract" data-title="Hybrid CNN & Random Forest for Water Level Prediction" data-abstract="This paper presents a machine learning-based approach for predicting water level fluctuations in the Kaptai Reservoir..."><i class="fas fa-book-open"></i> Read Abstract</button>
             </div>
           </article>
         </div>
@@ -1071,19 +517,19 @@
         <div class="section-header">
           <div>
             <div class="section-title" id="contactTitle">Let's Connect</div>
-            <div class="section-sub">Open to research collaborations and professional opportunities</div>
+            <div class="section-sub">Open to research collaborations and PhD opportunities</div>
           </div>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card">
             <h3 style="margin-bottom:8px">Get In Touch</h3>
-            <p style="color:var(--muted);margin-bottom:10px">I'm open to collaborations, PhD opportunities, and applied research projects in AI/ML.</p>
+            <p style="color:var(--muted);margin-bottom:10px">I'm open to collaborations, PhD opportunities, and research positions in generative AI, diffusion models, and edge AI.</p>
 
             <ul style="list-style:none;padding-left:0;font-weight:700;color:var(--muted);line-height:1.8">
               <li><i class="fas fa-envelope" style="margin-right:8px;color:var(--primary)"></i> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li>
-              <li><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--primary)"></i> Dhaka, Bangladesh</li>
-              <li><i class="fas fa-graduation-cap" style="margin-right:8px;color:var(--primary)"></i> BRAC University</li>
+              <li><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--primary)"></i> Kuala Lumpur, Malaysia</li>
+              <li><i class="fas fa-university" style="margin-right:8px;color:var(--primary)"></i> Universiti Teknologi Malaysia (UTM)</li>
             </ul>
 
             <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
@@ -1094,8 +540,8 @@
           </div>
 
           <div class="contact-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px">
-            <div style="font-weight:800;font-size:1.05rem">Ready to collaborate?</div>
-            <div style="color:var(--muted)">Send me an email and I'll respond promptly.</div>
+            <div style="font-weight:800;font-size:1.05rem">Research Collaboration</div>
+            <div style="color:var(--muted)">Interested in generative AI, diffusion models, or edge AI research? Let's connect.</div>
             <a class="btn btn-primary" href="mailto:tanzinabdul@gmail.com"><i class="fas fa-paper-plane"></i> Send Message</a>
             <a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" class="btn btn-cv"><i class="fas fa-download"></i> Download CV</a>
           </div>
@@ -1127,11 +573,9 @@
     // Mobile menu toggle
     const menuToggle = document.getElementById('menuToggle');
     menuToggle.addEventListener('click', () => {
-      const desktopNav = document.getElementById('navLinksDesktop');
       const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
       menuToggle.setAttribute('aria-expanded', String(!expanded));
       if (!expanded) {
-        // create a simple mobile menu overlay
         const mobile = document.createElement('div');
         mobile.id = 'mobileMenu';
         mobile.style.position = 'fixed';
@@ -1146,6 +590,7 @@
         mobile.innerHTML = `
           <a href="#home" style="display:block;padding:8px 6px;font-weight:700">Home</a>
           <a href="#about" style="display:block;padding:8px 6px;font-weight:700">About</a>
+          <a href="#research" style="display:block;padding:8px 6px;font-weight:700">Research</a>
           <a href="#skills" style="display:block;padding:8px 6px;font-weight:700">Skills</a>
           <a href="#projects" style="display:block;padding:8px 6px;font-weight:700">Projects</a>
           <a href="#certifications" style="display:block;padding:8px 6px;font-weight:700">Certifications</a>
@@ -1154,8 +599,6 @@
           <a href="#contact" style="display:block;padding:8px 6px;font-weight:700">Contact</a>
         `;
         document.body.appendChild(mobile);
-
-        // close when clicking outside
         setTimeout(() => {
           const closeOnOutside = (e) => {
             if (!mobile.contains(e.target) && e.target !== menuToggle) {
@@ -1172,34 +615,28 @@
       }
     });
 
- 
-
     // Abstract Modal functionality
     const modal = document.getElementById('abstractModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalBody = document.getElementById('modalBody');
     const modalClose = document.getElementById('modalClose');
     
-    // Add event listeners to all "Read Abstract" buttons
     document.querySelectorAll('.read-abstract').forEach(button => {
       button.addEventListener('click', () => {
         const title = button.getAttribute('data-title');
         const abstract = button.getAttribute('data-abstract');
-        
         modalTitle.textContent = title;
         modalBody.textContent = abstract;
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        document.body.style.overflow = 'hidden';
       });
     });
     
-    // Close modal when clicking close button
     modalClose.addEventListener('click', () => {
       modal.classList.remove('active');
       document.body.style.overflow = 'auto';
     });
     
-    // Close modal when clicking outside the content
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
         modal.classList.remove('active');
@@ -1207,10 +644,9 @@
       }
     });
 
-    // Smooth scroll adjustments (account for fixed nav)
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', (e)=>{
-        // allow default if external link
         if (a.getAttribute('href').startsWith('#')) {
           e.preventDefault();
           const target = document.querySelector(a.getAttribute('href'));
@@ -1218,7 +654,6 @@
           const navHeight = document.querySelector('.nav').offsetHeight + 8;
           const y = target.getBoundingClientRect().top + window.scrollY - navHeight;
           window.scrollTo({top:y,behavior:'smooth'});
-          // close mobile menu if any
           const mm = document.getElementById('mobileMenu');
           if (mm) mm.remove();
           const mt = document.getElementById('menuToggle');
