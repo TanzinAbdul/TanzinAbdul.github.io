@@ -3,7 +3,143 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
   <title>Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher</title>
+
+  <!-- Google Search Console Verification (Replace with your actual verification code) -->
+  <meta name="google-site-verification" content="aU1bO9TPpIDppJyJ2Fayj5bLJS7ZiR5wz2ElDc-e6Js" />
+
+  <!-- Primary SEO Metadata -->
+  <meta name="description" content="Personal website of Mohammed Abdul Al Arafat Tanzin, Generative AI Researcher and MPhil Candidate at Universiti Teknologi Malaysia. Specializing in Diffusion Models, Agentic AI, and Edge Vision." />
+  <meta name="keywords" content="Mohammed Abdul Al Arafat Tanzin, Tanzin, Generative AI, Lightweight Diffusion Transformers, UTM, BRAC University, Computer Science Researcher" />
+  <meta name="author" content="Mohammed Abdul Al Arafat Tanzin" />
+  <link rel="canonical" href="https://tanzinabdul.github.io/" />
+
+  <!-- Open Graph / Social Media Sharing -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher" />
+  <meta property="og:description" content="MPhil Candidate at UTM researching Lightweight Diffusion Transformers and Edge AI." />
+  <meta property="og:url" content="https://tanzinabdul.github.io/" />
+  <meta property="og:image" content="https://tanzinabdul.github.io/Tanzin.jpg" />
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        
+        if (!expanded) {
+          const mobile = document.createElement('div');
+          mobile.id = 'mobileMenu';
+          mobile.style.position = 'fixed';
+          mobile.style.top = '64px';
+          mobile.style.right = '16px';
+          mobile.style.left = '16px';
+          mobile.style.background = 'white';
+          mobile.style.borderRadius = '12px';
+          mobile.style.boxShadow = '0 10px 30px rgba(2,6,23,0.08)';
+          mobile.style.padding = '12px';
+          mobile.style.zIndex = '1400';
+          mobile.innerHTML = `<a href="#home" style="display:block;padding:8px 6px;font-weight:700">Home</a><a href="#about" style="display:block;padding:8px 6px;font-weight:700">About</a><a href="#research" style="display:block;padding:8px 6px;font-weight:700">Research</a><a href="#skills" style="display:block;padding:8px 6px;font-weight:700">Skills</a><a href="#projects" style="display:block;padding:8px 6px;font-weight:700">Projects</a><a href="#entrepreneur" style="display:block;padding:8px 6px;font-weight:700">Entrepreneur</a><a href="#certifications" style="display:block;padding:8px 6px;font-weight:700">Certifications</a><a href="#honors" style="display:block;padding:8px 6px;font-weight:700">Honors</a><a href="#publications" style="display:block;padding:8px 6px;font-weight:700">Publications</a><a href="#contact" style="display:block;padding:8px 6px;font-weight:700">Contact</a>`;
+          document.body.appendChild(mobile);
+          setTimeout(() => {
+            const closeOnOutside = function(e) {
+              if (!mobile.contains(e.target) && e.target !== menuToggle) {
+                mobile.remove();
+                menuToggle.setAttribute('aria-expanded', 'false');
+                document.removeEventListener('click', closeOnOutside);
+              }
+            };
+            document.addEventListener('click', closeOnOutside);
+          }, 100);
+        } else {
+          const mobile = document.getElementById('mobileMenu');
+          if (mobile) mobile.remove();
+        }
+      });
+    }
+
+    // Abstract Modal
+    const modal = document.getElementById('abstractModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const modalClose = document.getElementById('modalClose');
+    
+    if (modal && modalTitle && modalBody && modalClose) {
+      document.querySelectorAll('.read-abstract').forEach(function(button) {
+        button.addEventListener('click', function() {
+          modalTitle.textContent = this.getAttribute('data-title');
+          modalBody.textContent = this.getAttribute('data-abstract');
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      
+      modalClose.addEventListener('click', function() {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+      
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (!target) return;
+          const nav = document.querySelector('.nav');
+          const navHeight = nav ? nav.offsetHeight + 8 : 60;
+          const y = target.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({top: y, behavior: 'smooth'});
+          
+          const mm = document.getElementById('mobileMenu');
+          if (mm) mm.remove();
+          const mt = document.getElementById('menuToggle');
+          if (mt) mt.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammed Abdul Al Arafat Tanzin",
+    "alternateName": ["Tanzin", "Mohammed Abdul Al Arafat", "Arafat Tanzin"],
+    "url": "https://tanzinabdul.github.io",
+    "image": "https://tanzinabdul.github.io/Tanzin.jpg",
+    "jobTitle": "Generative AI Researcher",
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Universiti Teknologi Malaysia"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "BRAC University"
+    },
+    "sameAs": [
+      "https://github.com/TanzinAbdul"
+    ],
+    "knowsAbout": [
+      "Generative AI",
+      "Diffusion Models",
+      "Edge AI",
+      "Computer Vision",
+      "Agentic AI"
+    ]
+  }
+  </script>
 
   <!-- Fonts & Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -778,94 +914,5 @@
   <div class="modal-overlay" id="abstractModal"><div class="modal-content"><div class="modal-header"><div class="modal-title" id="modalTitle">Abstract</div><button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button></div><div class="modal-body" id="modalBody">Abstract content will appear here.</div></div></div>
 
   
-  <head>
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher</title>
-
-  <!-- Google Search Console Verification (Replace with your actual verification code) -->
-  <meta name="google-site-verification" content="aU1bO9TPpIDppJyJ2Fayj5bLJS7ZiR5wz2ElDc-e6Js" />
-
-  <!-- Primary SEO Metadata -->
-  <meta name="description" content="Personal website of Mohammed Abdul Al Arafat Tanzin, Generative AI Researcher and MPhil Candidate at Universiti Teknologi Malaysia. Specializing in Diffusion Models, Agentic AI, and Edge Vision." />
-  <meta name="keywords" content="Mohammed Abdul Al Arafat Tanzin, Tanzin, Generative AI, Lightweight Diffusion Transformers, UTM, BRAC University, Computer Science Researcher" />
-  <meta name="author" content="Mohammed Abdul Al Arafat Tanzin" />
-  <link rel="canonical" href="https://tanzinabdul.github.io/" />
-
-  <!-- Open Graph / Social Media Sharing -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher" />
-  <meta property="og:description" content="MPhil Candidate at UTM researching Lightweight Diffusion Transformers and Edge AI." />
-  <meta property="og:url" content="https://tanzinabdul.github.io/" />
-  <meta property="og:image" content="https://tanzinabdul.github.io/Tanzin.jpg" />
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    menuToggle.addEventListener('click', () => {
-      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!expanded));
-      if (!expanded) {
-        const mobile = document.createElement('div');
-        mobile.id = 'mobileMenu';
-        mobile.style.position = 'fixed';
-        mobile.style.top = '64px';
-        mobile.style.right = '16px';
-        mobile.style.left = '16px';
-        mobile.style.background = 'white';
-        mobile.style.borderRadius = '12px';
-        mobile.style.boxShadow = '0 10px 30px rgba(2,6,23,0.08)';
-        mobile.style.padding = '12px';
-        mobile.style.zIndex = '1400';
-        mobile.innerHTML = `<a href="#home" style="display:block;padding:8px 6px;font-weight:700">Home</a><a href="#about" style="display:block;padding:8px 6px;font-weight:700">About</a><a href="#research" style="display:block;padding:8px 6px;font-weight:700">Research</a><a href="#skills" style="display:block;padding:8px 6px;font-weight:700">Skills</a><a href="#projects" style="display:block;padding:8px 6px;font-weight:700">Projects</a><a href="#entrepreneur" style="display:block;padding:8px 6px;font-weight:700">Entrepreneur</a><a href="#certifications" style="display:block;padding:8px 6px;font-weight:700">Certifications</a><a href="#honors" style="display:block;padding:8px 6px;font-weight:700">Honors</a><a href="#publications" style="display:block;padding:8px 6px;font-weight:700">Publications</a><a href="#contact" style="display:block;padding:8px 6px;font-weight:700">Contact</a>`;
-        document.body.appendChild(mobile);
-        setTimeout(() => {
-          const closeOnOutside = (e) => { if (!mobile.contains(e.target) && e.target !== menuToggle) { mobile.remove(); menuToggle.setAttribute('aria-expanded','false'); document.removeEventListener('click', closeOnOutside); } };
-          document.addEventListener('click', closeOnOutside);
-        }, 100);
-      } else { const mobile = document.getElementById('mobileMenu'); if (mobile) mobile.remove(); }
-    });
-
-    const modal = document.getElementById('abstractModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalBody = document.getElementById('modalBody');
-    const modalClose = document.getElementById('modalClose');
-    document.querySelectorAll('.read-abstract').forEach(button => {
-      button.addEventListener('click', () => { modalTitle.textContent = button.getAttribute('data-title'); modalBody.textContent = button.getAttribute('data-abstract'); modal.classList.add('active'); document.body.style.overflow = 'hidden'; });
-    });
-    modalClose.addEventListener('click', () => { modal.classList.remove('active'); document.body.style.overflow = 'auto'; });
-    modal.addEventListener('click', (e) => { if (e.target === modal) { modal.classList.remove('active'); document.body.style.overflow = 'auto'; } });
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click', (e)=>{ if (a.getAttribute('href').startsWith('#')) { e.preventDefault(); const target = document.querySelector(a.getAttribute('href')); if (!target) return; const navHeight = document.querySelector('.nav').offsetHeight + 8; const y = target.getBoundingClientRect().top + window.scrollY - navHeight; window.scrollTo({top:y,behavior:'smooth'}); const mm = document.getElementById('mobileMenu'); if (mm) mm.remove(); const mt = document.getElementById('menuToggle'); if (mt) mt.setAttribute('aria-expanded','false'); } }); });
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mohammed Abdul Al Arafat Tanzin",
-  "alternateName": ["Tanzin", "Mohammed Abdul Al Arafat", "Tanzin Abdul"],
-  "url": "https://tanzinabdul.github.io",
-  "image": "https://tanzinabdul.github.io/Tanzin.jpg",
-  "jobTitle": "Generative AI Researcher",
-  "worksFor": {
-    "@type": "EducationalOrganization",
-    "name": "Universiti Teknologi Malaysia"
-  },
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "BRAC University"
-  },
-  "sameAs": [
-    "https://github.com/TanzinAbdul",
-    "https://www.linkedin.com/tanzin-abdul/",
-    "https://scholar.google.com/citations?hl=en&user=O9MIHNIAAAAJ"
-  ],
-  "knowsAbout": [
-    "Generative AI",
-    "Diffusion Models",
-    "Edge AI",
-    "Computer Vision",
-    "Agentic AI"
-  ]
-}
-</script>
-  </head>
 </body>
 </html>
