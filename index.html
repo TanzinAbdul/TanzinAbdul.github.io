@@ -1,918 +1,1913 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  
-  <title>Mohammed Abdul Al Arafat Tanzin — AI Researcher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Google Search Console Verification (Replace with your actual verification code) -->
-  <meta name="google-site-verification" content="aU1bO9TPpIDppJyJ2Fayj5bLJS7ZiR5wz2ElDc-e6Js" />
+    <title>Mohammed Abdul Al Arafat Tanzin — AI Researcher</title>
 
-  <!-- Primary SEO Metadata -->
-  <meta name="description" content="Personal website of Mohammed Abdul Al Arafat Tanzin, Generative AI Researcher and MPhil Candidate at Universiti Teknologi Malaysia. Specializing in Diffusion Models, Agentic AI, and Edge Vision." />
-  <meta name="keywords" content="Tanzin Abdul, Tanzin, Abdul Tanzin, Mohammed Abdul Al Arafat Tanzin, Arafat Tanzin, Generative AI, Lightweight Diffusion Transformers, UTM, BRAC University, Computer Science Researcher" />
-  <meta name="author" content="Mohammed Abdul Al Arafat Tanzin" />
-  <link rel="canonical" href="https://tanzinabdul.github.io/" />
+    <!-- Google Search Console Verification (Replace with your actual verification code) -->
+    <meta name="google-site-verification" content="aU1bO9TPpIDppJyJ2Fayj5bLJS7ZiR5wz2ElDc-e6Js" />
 
-  <!-- Open Graph / Social Media Sharing -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher" />
-  <meta property="og:description" content="MPhil Candidate at UTM researching Lightweight Diffusion Transformers and Edge AI." />
-  <meta property="og:url" content="https://tanzinabdul.github.io/" />
-  <meta property="og:image" content="https://tanzinabdul.github.io/Tanzin.jpg" />
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    if (menuToggle) {
-      menuToggle.addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', String(!expanded));
-        
-        if (!expanded) {
-          const mobile = document.createElement('div');
-          mobile.id = 'mobileMenu';
-          mobile.style.position = 'fixed';
-          mobile.style.top = '64px';
-          mobile.style.right = '16px';
-          mobile.style.left = '16px';
-          mobile.style.background = 'white';
-          mobile.style.borderRadius = '12px';
-          mobile.style.boxShadow = '0 10px 30px rgba(2,6,23,0.08)';
-          mobile.style.padding = '12px';
-          mobile.style.zIndex = '1400';
-          mobile.innerHTML = `<a href="#home" style="display:block;padding:8px 6px;font-weight:700">Home</a><a href="#about" style="display:block;padding:8px 6px;font-weight:700">About</a><a href="#research" style="display:block;padding:8px 6px;font-weight:700">Research</a><a href="#skills" style="display:block;padding:8px 6px;font-weight:700">Skills</a><a href="#projects" style="display:block;padding:8px 6px;font-weight:700">Projects</a><a href="#entrepreneur" style="display:block;padding:8px 6px;font-weight:700">Entrepreneur</a><a href="#certifications" style="display:block;padding:8px 6px;font-weight:700">Certifications</a><a href="#honors" style="display:block;padding:8px 6px;font-weight:700">Honors</a><a href="#publications" style="display:block;padding:8px 6px;font-weight:700">Publications</a><a href="#contact" style="display:block;padding:8px 6px;font-weight:700">Contact</a>`;
-          document.body.appendChild(mobile);
-          setTimeout(() => {
-            const closeOnOutside = function(e) {
-              if (!mobile.contains(e.target) && e.target !== menuToggle) {
-                mobile.remove();
-                menuToggle.setAttribute('aria-expanded', 'false');
-                document.removeEventListener('click', closeOnOutside);
-              }
-            };
-            document.addEventListener('click', closeOnOutside);
-          }, 100);
-        } else {
-          const mobile = document.getElementById('mobileMenu');
-          if (mobile) mobile.remove();
+    <!-- Primary SEO Metadata -->
+    <meta name="description" content="Personal website of Mohammed Abdul Al Arafat Tanzin, Generative AI Researcher and MPhil Candidate at Universiti Teknologi Malaysia. Specializing in Diffusion Models, Agentic AI, and Edge Vision." />
+    <meta name="keywords" content="Tanzin Abdul, Tanzin, Abdul Tanzin, Mohammed Abdul Al Arafat Tanzin, Arafat Tanzin, Generative AI, Lightweight Diffusion Transformers, UTM, BRAC University, Computer Science Researcher" />
+    <meta name="author" content="Mohammed Abdul Al Arafat Tanzin" />
+    <link rel="canonical" href="https://tanzinabdul.github.io/" />
+
+    <!-- Open Graph / Social Media Sharing -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Mohammed Abdul Al Arafat Tanzin — Generative AI Researcher" />
+    <meta property="og:description" content="MPhil Candidate at UTM researching Lightweight Diffusion Transformers and Edge AI." />
+    <meta property="og:url" content="https://tanzinabdul.github.io/" />
+    <meta property="og:image" content="https://tanzinabdul.github.io/Tanzin.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Mohammed Abdul Al Arafat Tanzin",
+            "alternateName": ["Tanzin", "Mohammed Abdul Al Arafat", "Arafat Tanzin"],
+            "url": "https://tanzinabdul.github.io",
+            "image": "https://tanzinabdul.github.io/Tanzin.jpg",
+            "jobTitle": "Generative AI Researcher",
+            "worksFor": {
+                "@type": "EducationalOrganization",
+                "name": "Universiti Teknologi Malaysia"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "BRAC University"
+            },
+            "sameAs": [
+                "https://github.com/TanzinAbdul"
+            ],
+            "knowsAbout": [
+                "Generative AI",
+                "Diffusion Models",
+                "Edge AI",
+                "Computer Vision",
+                "Agentic AI"
+            ]
         }
-      });
-    }
+    </script>
 
-    // Abstract Modal
-    const modal = document.getElementById('abstractModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalBody = document.getElementById('modalBody');
-    const modalClose = document.getElementById('modalClose');
-    
-    if (modal && modalTitle && modalBody && modalClose) {
-      document.querySelectorAll('.read-abstract').forEach(function(button) {
-        button.addEventListener('click', function() {
-          modalTitle.textContent = this.getAttribute('data-title');
-          modalBody.textContent = this.getAttribute('data-abstract');
-          modal.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        });
-      });
-      
-      modalClose.addEventListener('click', function() {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-      });
-      
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-          modal.classList.remove('active');
-          document.body.style.overflow = 'auto';
+    <!-- Fonts & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --color-bg: #f9fafb;
+            --color-surface: #ffffff;
+            --color-primary: #4f6ef7;
+            --color-primary-hover: #3b54d4;
+            --color-primary-light: #eef1ff;
+            --color-accent: #8b5cf6;
+            --color-accent-light: #f3f0ff;
+            --color-text: #111827;
+            --color-text-secondary: #4b5563;
+            --color-muted: #6b7280;
+            --color-border: #e5e7eb;
+            --color-border-light: #f3f4f6;
+            --radius-sm: 10px;
+            --radius: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 24px;
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 24px 56px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.05);
+            --max-width: 1150px;
+            --nav-height: 64px;
+            --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-      });
-    }
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-      a.addEventListener('click', function(e) {
-        if (this.getAttribute('href').startsWith('#')) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (!target) return;
-          const nav = document.querySelector('.nav');
-          const navHeight = nav ? nav.offsetHeight + 8 : 60;
-          const y = target.getBoundingClientRect().top + window.scrollY - navHeight;
-          window.scrollTo({top: y, behavior: 'smooth'});
-          
-          const mm = document.getElementById('mobileMenu');
-          if (mm) mm.remove();
-          const mt = document.getElementById('menuToggle');
-          if (mt) mt.setAttribute('aria-expanded', 'false');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-      });
-    });
-  });
-</script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohammed Abdul Al Arafat Tanzin",
-    "alternateName": ["Tanzin", "Mohammed Abdul Al Arafat", "Arafat Tanzin"],
-    "url": "https://tanzinabdul.github.io",
-    "image": "https://tanzinabdul.github.io/Tanzin.jpg",
-    "jobTitle": "Generative AI Researcher",
-    "worksFor": {
-      "@type": "EducationalOrganization",
-      "name": "Universiti Teknologi Malaysia"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "BRAC University"
-    },
-    "sameAs": [
-      "https://github.com/TanzinAbdul"
-    ],
-    "knowsAbout": [
-      "Generative AI",
-      "Diffusion Models",
-      "Edge AI",
-      "Computer Vision",
-      "Agentic AI"
-    ]
-  }
-  </script>
 
-  <!-- Fonts & Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-height);
+        }
 
-  <style>
-    :root{
-      --primary:#2563eb;
-      --primary-dark:#1e40af;
-      --muted:#64748b;
-      --bg:#f7f8fb;
-      --card:#ffffff;
-      --glass: rgba(255,255,255,0.6);
-      --radius:14px;
-      --shadow-sm: 0 6px 12px rgba(16,24,40,0.06);
-      --shadow-md: 0 10px 25px rgba(16,24,40,0.08);
-      --maxw:1200px;
-    }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--color-text);
+            background: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color:#0f172a;
-      background: linear-gradient(180deg, #f5f7fb 0%, var(--bg) 100%);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
+        /* ---- TYPOGRAPHY ---- */
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
 
-    a{color:var(--primary);text-decoration:none}
-    img{max-width:100%;display:block}
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        a:hover {
+            color: var(--color-primary-hover);
+        }
 
-    /* --- NAV --- */
-    .nav {
-      position:fixed;
-      top:0;
-      left:0;
-      right:0;
-      z-index:1200;
-      padding:12px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      backdrop-filter: blur(6px);
-      background: rgba(255,255,255,0.55);
-      border-bottom:1px solid rgba(15,23,42,0.04);
-    }
-    .nav-inner{
-      width:100%;
-      max-width:var(--maxw);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
-    .brand{font-weight:700;color:var(--primary);font-size:1.05rem}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    .nav-links a{font-weight:600;color:var(--muted);font-size:0.92rem}
-    .nav-links a:hover{color:var(--primary)}
-    .menu-toggle{display:none;background:none;border:0;font-size:1.25rem;cursor:pointer}
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-    /* --- HERO --- */
-    .hero {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:88px 20px 48px;
-      position:relative;
-      overflow:visible;
-      max-width:100%;
-    }
-    .hero-inner{
-      width:100%;
-      max-width:var(--maxw);
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.92));
-      border-radius:16px;
-      box-shadow:var(--shadow-md);
-      display:grid;
-      grid-template-columns: 420px 1fr;
-      gap:1.5rem;
-      align-items:center;
-      padding:28px;
-    }
+        /* ---- UTILITY ---- */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-    .hero-left{
-      position:relative;
-      padding:18px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      align-items:center;
-      justify-content:center;
-    }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
 
-    .profile-wrap{
-      width:220px;
-      height:220px;
-      border-radius:50%;
-      overflow:hidden;
-      border:6px solid rgba(37,99,235,0.08);
-      box-shadow: 0 15px 35px rgba(37,99,235,0.08);
-      transform: translateY(-28px);
-      background: linear-gradient(135deg,#eef2ff,#f0f9ff);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .profile-wrap img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-    }
+        /* ---- ANIMATIONS ---- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes subtlePulse {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(79, 110, 247, 0.25);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(79, 110, 247, 0);
+            }
+        }
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
-    .hero-name{
-      text-align:center;
-      margin-top:-10px;
-      line-height:1.05;
-    }
-    .hero-name h1{
-      font-size:1.5rem;
-      font-weight:800;
-      letter-spacing:-0.01em;
-      margin-bottom:6px;
-    }
-    .hero-name .role{
-      color:var(--muted);
-      font-weight:600;
-      font-size:0.95rem;
-    }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
 
-    .hero-cta{
-      display:flex;
-      gap:10px;
-      margin-top:6px;
-      flex-wrap:wrap;
-      justify-content:center;
-    }
-    .btn{
-      padding:10px 14px;
-      border-radius:10px;
-      font-weight:700;
-      border:0;
-      cursor:pointer;
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      justify-content:center;
-      transition: all 0.2s ease;
-    }
-    .btn-primary{background:var(--primary);color:white;box-shadow: 0 8px 20px rgba(37,99,235,0.12)}
-    .btn-primary:hover{background:var(--primary-dark);transform: translateY(-2px);box-shadow: 0 12px 25px rgba(37,99,235,0.18)}
-    .btn-outline{background:transparent;border:1.5px solid rgba(15,23,42,0.06);color:var(--muted)}
-    .btn-outline:hover{background:rgba(15,23,42,0.03);border-color:rgba(15,23,42,0.1)}
+        /* ---- NAVIGATION ---- */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1200;
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: all var(--transition-smooth);
+        }
+        .nav.scrolled {
+            background: rgba(255, 255, 255, 0.88);
+            border-bottom-color: var(--color-border-light);
+            box-shadow: var(--shadow-xs);
+        }
+        .nav-inner {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .brand {
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--color-text);
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+            position: relative;
+        }
+        .brand span {
+            color: var(--color-primary);
+        }
+        .nav-links {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .nav-links a {
+            font-weight: 500;
+            color: var(--color-muted);
+            font-size: 0.875rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: all var(--transition-fast);
+            white-space: nowrap;
+            letter-spacing: -0.01em;
+        }
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--color-primary);
+            background: var(--color-primary-light);
+        }
+        .nav-links a.nav-active {
+            color: var(--color-primary);
+            background: var(--color-primary-light);
+            font-weight: 600;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.35rem;
+            cursor: pointer;
+            color: var(--color-text);
+            padding: 8px;
+            border-radius: 8px;
+            transition: all var(--transition-fast);
+            line-height: 1;
+        }
+        .menu-toggle:hover {
+            background: var(--color-border-light);
+            color: var(--color-primary);
+        }
 
-    .btn-cv {
-      background: linear-gradient(135deg, #4f46e5, #7c3aed);
-      color: white;
-      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
-      font-weight: 700;
-      padding: 10px 18px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-    }
-    .btn-cv:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
-      background: linear-gradient(135deg, #4338ca, #6d28d9);
-    }
+        /* Mobile Menu Overlay */
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1300;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+        }
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .mobile-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+            max-width: 85vw;
+            z-index: 1400;
+            background: var(--color-surface);
+            box-shadow: var(--shadow-xl);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            transform: translateX(100%);
+            transition: transform var(--transition-spring);
+            border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+        }
+        .mobile-overlay.active .mobile-panel {
+            transform: translateX(0);
+        }
+        .mobile-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+        .mobile-panel-header .brand {
+            font-size: 1.1rem;
+        }
+        .mobile-close {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: var(--color-muted);
+            padding: 6px;
+            border-radius: 8px;
+            transition: all var(--transition-fast);
+        }
+        .mobile-close:hover {
+            background: var(--color-border-light);
+            color: var(--color-text);
+        }
+        .mobile-panel a {
+            display: block;
+            padding: 12px 16px;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            border-radius: 10px;
+            transition: all var(--transition-fast);
+            font-size: 0.95rem;
+            letter-spacing: -0.01em;
+        }
+        .mobile-panel a:hover {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+        }
 
-    .hero-right{
-      padding:18px 22px;
-      position:relative;
-    }
+        /* ---- HERO ---- */
+        .hero {
+            padding: calc(var(--nav-height) + 40px) 24px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -180px;
+            right: -120px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(79, 110, 247, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -80px;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 40px;
+            align-items: center;
+            background: var(--color-surface);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            padding: 40px;
+            border: 1px solid var(--color-border-light);
+        }
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            text-align: center;
+        }
+        .profile-wrap {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--color-surface);
+            box-shadow: var(--shadow-md), 0 0 0 8px var(--color-primary-light);
+            transition: all var(--transition-smooth);
+            flex-shrink: 0;
+        }
+        .profile-wrap:hover {
+            box-shadow: var(--shadow-lg), 0 0 0 12px var(--color-primary-light);
+            transform: scale(1.03);
+        }
+        .profile-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-name h1 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+            color: var(--color-text);
+        }
+        .hero-name .role {
+            color: var(--color-muted);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+        }
+        .hero-cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-smooth);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            font-family: inherit;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: var(--color-primary);
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(79, 110, 247, 0.3);
+        }
+        .btn-primary:hover {
+            background: var(--color-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(79, 110, 247, 0.4);
+            color: #fff;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--color-border);
+            color: var(--color-text-secondary);
+        }
+        .btn-outline:hover {
+            background: var(--color-border-light);
+            border-color: var(--color-muted);
+            color: var(--color-text);
+            transform: translateY(-1px);
+        }
+        .btn-cv {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+            font-weight: 700;
+            animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .btn-cv:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(99, 102, 241, 0.45);
+            color: #fff;
+            animation: none;
+        }
+        .btn-sm {
+            padding: 7px 13px;
+            font-size: 0.82rem;
+            border-radius: 8px;
+        }
+        .hero-right {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .hero-summary h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        .hero-summary p {
+            color: var(--color-text-secondary);
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .hero-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .stat-pill {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            transition: all var(--transition-fast);
+        }
+        .stat-pill:hover {
+            background: #dce3ff;
+            transform: translateY(-1px);
+        }
+        .hero-sub-text {
+            margin-top: 8px;
+            color: var(--color-muted);
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
 
-    .hero-right::before{
-      content:'';
-      position:absolute;
-      left:-40px;
-      top:0;
-      bottom:0;
-      width:40px;
-      background: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(8,145,178,0.04));
-      clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-      border-top-left-radius:12px;
-      border-bottom-left-radius:12px;
-      pointer-events:none;
-      opacity:0.95;
-    }
+        /* ---- SECTIONS ---- */
+        .section {
+            padding: 48px 24px;
+            position: relative;
+        }
+        .section-alt {
+            background: linear-gradient(180deg, #fafbfd 0%, #f5f6fa 100%);
+        }
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--color-text);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--color-primary);
+            border-radius: 2px;
+            opacity: 0.7;
+        }
+        .section-sub {
+            color: var(--color-muted);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+        }
 
-    .hero-summary h3{font-size:1.08rem;margin-bottom:8px}
-    .hero-summary p{color:var(--muted);margin-bottom:12px}
-    .hero-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:0.92rem;color:var(--muted)}
+        /* ---- ABOUT ---- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+        .about-card {
+            background: var(--color-surface);
+            padding: 24px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-border-light);
+            transition: all var(--transition-smooth);
+        }
+        .about-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+        .about-bio h3 {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        .about-bio p {
+            color: var(--color-text-secondary);
+            margin-bottom: 12px;
+            font-size: 0.92rem;
+            line-height: 1.65;
+        }
+        .about-stats {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .about-stat {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: -0.01em;
+        }
+        .about-list {
+            list-style: none;
+            padding: 0;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            line-height: 1.8;
+            font-size: 0.92rem;
+        }
+        .about-list li {
+            padding: 4px 0;
+        }
+        .about-list strong {
+            color: var(--color-text);
+        }
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .tag {
+            background: #f4f6fb;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.82rem;
+            color: var(--color-text-secondary);
+            letter-spacing: -0.01em;
+            transition: all var(--transition-fast);
+        }
+        .tag:hover {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+        }
 
-    .stat-pill{
-      background:rgba(15,23,42,0.04);
-      padding:8px 10px;border-radius:10px;font-weight:700;
-      min-width:90px;text-align:center;
-    }
+        /* ---- RESEARCH ---- */
+        .research-card {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-border-light);
+            transition: all var(--transition-smooth);
+        }
+        .research-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+        .research-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+        .research-card p {
+            color: var(--color-text-secondary);
+            line-height: 1.65;
+            font-size: 0.92rem;
+        }
+        .objective-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .objective-card {
+            background: #fafbfd;
+            padding: 20px;
+            border-radius: var(--radius);
+            transition: all var(--transition-smooth);
+            border: 1px solid transparent;
+        }
+        .objective-card:hover {
+            background: var(--color-surface);
+            box-shadow: var(--shadow-sm);
+            border-color: var(--color-border-light);
+            transform: translateY(-2px);
+        }
+        .objective-card .obj-icon {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+            display: block;
+        }
+        .objective-card h4 {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+        .objective-card p {
+            color: var(--color-muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
 
-    /* --- MAIN SECTIONS --- */
-    .section{padding:36px 20px}
-    .container{max-width:var(--maxw);margin:0 auto}
+        /* ---- SKILLS ---- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+        .skill-card {
+            background: var(--color-surface);
+            padding: 20px;
+            border-radius: var(--radius);
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition-smooth);
+            cursor: default;
+        }
+        .skill-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+        .skill-card .skill-name {
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            letter-spacing: -0.01em;
+        }
+        .skill-card .skill-desc {
+            color: var(--color-muted);
+            font-weight: 400;
+            font-size: 0.85rem;
+            line-height: 1.45;
+        }
 
-    .section-header{
-      display:flex;
-      align-items:baseline;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:18px;
-    }
-    .section-title{font-size:1.15rem;font-weight:800}
-    .section-sub{color:var(--muted);font-weight:600;font-size:0.95rem}
+        /* ---- PROJECTS ---- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .project-card {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-xs);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: all var(--transition-smooth);
+        }
+        .project-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+        .project-thumb {
+            width: 100%;
+            height: 140px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            background: #f0f3fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-border-light);
+        }
+        .project-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .project-thumb .thumb-icon {
+            font-size: 32px;
+            color: var(--color-primary);
+            opacity: 0.7;
+        }
+        .project-title {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: -0.01em;
+        }
+        .project-desc {
+            color: var(--color-muted);
+            font-size: 0.88rem;
+            flex: 1;
+            line-height: 1.5;
+        }
+        .project-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+        .thesis-badge {
+            display: inline-block;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
 
-    .about-grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:18px;
-      align-items:start;
-    }
-    .about-card{
-      background:var(--card);
-      padding:18px;border-radius:12px;box-shadow:var(--shadow-sm);
-      border:1px solid rgba(15,23,42,0.03);
-    }
-    .about-bio h3{margin-bottom:8px;font-size:1.02rem}
-    .about-bio p{color:var(--muted);margin-bottom:10px}
-    .about-stats{display:flex;gap:10px;flex-wrap:wrap}
-    .about-stat{background:linear-gradient(90deg,#fff,#fbfdff);padding:10px;border-radius:10px;min-width:88px;text-align:center;font-weight:700;color:var(--primary)}
+        /* ---- PUBLICATIONS ---- */
+        .pub-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .pub-card {
+            background: var(--color-surface);
+            padding: 18px;
+            border-radius: var(--radius);
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition-smooth);
+        }
+        .pub-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        .pub-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.76rem;
+            letter-spacing: 0.01em;
+        }
+        .pub-tag-journal {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .pub-tag-conference {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .pub-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin: 8px 0 6px;
+            letter-spacing: -0.01em;
+        }
+        .pub-meta {
+            color: var(--color-muted);
+            font-size: 0.84rem;
+            margin-bottom: 8px;
+        }
+        .pub-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-top: 6px;
+        }
+        .pub-links a {
+            font-weight: 600;
+            font-size: 0.84rem;
+        }
 
-    .skills-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-    }
-    .skill-card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.03);font-weight:700;color:var(--muted);min-height:96px}
+        /* ---- CERTIFICATIONS ---- */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 16px;
+        }
+        .cert-card {
+            background: var(--color-surface);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: var(--shadow-xs);
+            border: 1px solid var(--color-border-light);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: all var(--transition-smooth);
+        }
+        .cert-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        .cert-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .cert-icon {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .cert-details {
+            flex: 1;
+        }
+        .cert-name {
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.01em;
+        }
+        .cert-org {
+            color: var(--color-muted);
+            font-size: 0.87rem;
+            margin-bottom: 4px;
+        }
+        .cert-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 0.82rem;
+            color: var(--color-muted);
+        }
+        .cert-link {
+            margin-top: 6px;
+        }
 
-    .projects-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:14px;
-    }
-    .project-card{
-      background:var(--card);border-radius:12px;padding:12px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm);
-      display:flex;flex-direction:column;gap:10px;
-    }
-    .project-thumb{
-      width:100%;height:140px;border-radius:8px;overflow:hidden;background:#eef2ff;display:flex;align-items:center;justify-content:center;
-      border:1px solid rgba(15,23,42,0.03);
-    }
-    .project-thumb img{width:100%;height:100%;object-fit:cover}
-    .project-title{font-weight:800;font-size:1rem}
-    .project-desc{color:var(--muted);font-size:0.92rem;flex:1}
-    .project-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+        /* ---- HONORS ---- */
+        .honors-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .honor-item {
+            background: var(--color-surface);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: var(--shadow-xs);
+            border: 1px solid var(--color-border-light);
+            transition: all var(--transition-smooth);
+        }
+        .honor-item:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        .honor-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+        .honor-details {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
 
-    .pub-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-    .pub-card{
-      background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm);
-    }
-    .pub-meta{color:var(--muted);font-size:0.92rem;margin-bottom:8px}
-    .pub-links a{margin-right:10px;font-weight:700;color:var(--primary);font-size:0.9rem}
-    .pub-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+        /* ---- CONTACT ---- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 18px;
+        }
+        .contact-card {
+            background: var(--color-surface);
+            padding: 22px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border-light);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition-smooth);
+        }
+        .contact-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            line-height: 1.9;
+            font-size: 0.92rem;
+        }
+        .contact-list i {
+            margin-right: 10px;
+            color: var(--color-primary);
+            width: 18px;
+            text-align: center;
+        }
+        .contact-card-centered {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
 
-    .pub-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 6px 10px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      margin-right: 8px;
-    }
-    .pub-tag-journal {
-      background: linear-gradient(135deg, #10b981, #059669);
-      color: white;
-    }
-    .pub-tag-conference {
-      background: linear-gradient(135deg, #3b82f6, #2563eb);
-      color: white;
-    }
+        /* ---- FOOTER ---- */
+        footer {
+            padding: 24px 24px;
+            text-align: center;
+            color: var(--color-muted);
+            font-weight: 500;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--color-border-light);
+        }
 
-    .thesis-card{background:linear-gradient(180deg,#fff,#fbfdff);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.04);box-shadow:var(--shadow-sm)}
+        /* ---- MODAL ---- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background: var(--color-surface);
+            border-radius: var(--radius-xl);
+            padding: 28px;
+            max-width: 680px;
+            width: 92%;
+            max-height: 82vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-xl);
+            transform: translateY(24px) scale(0.97);
+            transition: all var(--transition-spring);
+        }
+        .modal-overlay.active .modal-content {
+            transform: translateY(0) scale(1);
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+        .modal-title {
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--color-muted);
+            padding: 8px;
+            border-radius: 8px;
+            transition: all var(--transition-fast);
+            line-height: 1;
+        }
+        .modal-close:hover {
+            background: var(--color-border-light);
+            color: var(--color-text);
+        }
+        .modal-body {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            font-size: 0.92rem;
+        }
 
-    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:12px}
-    .contact-card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.04)}
-    footer{padding:18px 20px;text-align:center;color:var(--muted);font-weight:600}
-
-    .certifications-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-      gap: 16px;
-    }
-    .cert-card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(15,23,42,0.04);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .cert-header {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    .cert-icon {
-      font-size: 1.5rem;
-      color: var(--primary);
-      flex-shrink: 0;
-    }
-    .cert-details {
-      flex: 1;
-    }
-    .cert-name {
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .cert-org {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 6px;
-    }
-    .cert-meta {
-      display: flex;
-      gap: 12px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .cert-link {
-      margin-top: 8px;
-    }
-
-    .honors-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .honor-item {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(15,23,42,0.04);
-    }
-    .honor-title {
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .honor-details {
-      color: var(--muted);
-      font-size: 0.92rem;
-      line-height: 1.5;
-    }
-
-    .research-card {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: var(--shadow-md);
-      border: 1px solid rgba(37,99,235,0.08);
-    }
-
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2000;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-    .modal-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-    .modal-content {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      max-width: 700px;
-      width: 90%;
-      max-height: 80vh;
-      overflow-y: auto;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-      transform: translateY(20px);
-      transition: transform 0.3s ease;
-    }
-    .modal-overlay.active .modal-content {
-      transform: translateY(0);
-    }
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(15,23,42,0.08);
-    }
-    .modal-title {
-      font-weight: 800;
-      font-size: 1.2rem;
-    }
-    .modal-close {
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-      color: var(--muted);
-    }
-    .modal-body {
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    @media (max-width:1060px){
-      .hero-inner{grid-template-columns: 1fr; padding:20px}
-      .hero-left{order:1; padding:12px;}
-      .hero-right{order:2; padding:12px 12px 24px;}
-      .profile-wrap{width:180px;height:180px;transform:translateY(0);margin-bottom:8px}
-      .hero-name{margin-top:0}
-      .hero-cta .btn{font-size:0.85rem;padding:8px 12px}
-      .about-grid{grid-template-columns:1fr}
-      .skills-grid{grid-template-columns:repeat(2,1fr)}
-      .contact-grid{grid-template-columns:1fr}
-      .certifications-grid{grid-template-columns:1fr}
-      .nav-links{display:none}
-      .menu-toggle{display:block}
-    }
-    @media (max-width:640px){
-      .skills-grid{grid-template-columns:1fr}
-      .pub-grid{grid-template-columns:1fr}
-      .projects-grid{grid-template-columns:1fr}
-      .certifications-grid{grid-template-columns:1fr}
-    }
-  </style>
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 1100px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 28px;
+                text-align: center;
+            }
+            .hero-left {
+                order: 1;
+            }
+            .hero-right {
+                order: 2;
+                align-items: center;
+            }
+            .hero-meta {
+                justify-content: center;
+            }
+            .hero-summary h3 {
+                text-align: center;
+            }
+            .profile-wrap {
+                width: 160px;
+                height: 160px;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+            .pub-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .section-title {
+                font-size: 1.15rem;
+            }
+        }
+        @media (max-width: 640px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+            .pub-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-inner {
+                padding: 20px;
+                border-radius: var(--radius-lg);
+            }
+            .hero {
+                padding: calc(var(--nav-height) + 20px) 12px 24px;
+            }
+            .section {
+                padding: 32px 12px;
+            }
+            .container {
+                padding: 0 12px;
+            }
+            .profile-wrap {
+                width: 140px;
+                height: 140px;
+            }
+            .hero-name h1 {
+                font-size: 1.2rem;
+            }
+            .objective-grid {
+                grid-template-columns: 1fr;
+            }
+            .btn {
+                font-size: 0.84rem;
+                padding: 9px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header class="nav" role="banner" aria-label="Main navigation">
-    <div class="nav-inner container">
-      <div class="brand">Tanzin</div>
-      <nav aria-label="Quick links">
-        <div class="nav-links" id="navLinksDesktop">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#entrepreneur">Entrepreneur</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#honors">Honors</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
+    <!-- NAVIGATION -->
+    <header class="nav" id="navbar" role="banner" aria-label="Main navigation">
+        <div class="nav-inner">
+            <div class="brand"><span>T</span>anzin</div>
+            <nav aria-label="Quick links">
+                <div class="nav-links" id="navLinksDesktop">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#entrepreneur">Entrepreneur</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#honors">Honors</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
-        <i class="fas fa-bars"></i>
-      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="mobile-panel" id="mobilePanel">
+            <div class="mobile-panel-header">
+                <div class="brand"><span>T</span>anzin</div>
+                <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+            </div>
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#research" class="mobile-nav-link">Research</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#entrepreneur" class="mobile-nav-link">Entrepreneur</a>
+            <a href="#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="#honors" class="mobile-nav-link">Honors</a>
+            <a href="#publications" class="mobile-nav-link">Publications</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section id="home" class="hero" aria-label="Hero">
-      <div class="hero-inner container" role="region" aria-labelledby="heroHeading">
-        <div class="hero-left">
-          <div class="profile-wrap" title="Tanzin's photo">
-            <img src="Tanzin.jpg" alt="Mohammed Abdul Al Arafat Tanzin portrait" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=60'">
-          </div>
-          <div class="hero-name">
-            <h1 id="heroHeading">Mohammed Abdul Al Arafat Tanzin</h1>
-            <div class="role">Generative AI Researcher | MPhil Candidate</div>
-          </div>
-          <div class="hero-cta">
-            <a class="btn btn-outline" href="#contact"><i class="fas fa-envelope"></i> Get in touch</a>
-            <a class="btn btn-cv" href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank"><i class="fas fa-download"></i> Download CV</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-summary">
-            <h3>Advancing Generative AI for Edge Deployment</h3>
-            <p>My research focuses on Lightweight Diffusion Transformers, accelerated sampling techniques, and model compression to enable real-time generative vision on resource-constrained edge devices. I specialize in Diffusion Models, Generative AI, Agentic AI, and Large Language Models.</p>
-            <div class="hero-meta">
-              <div class="stat-pill">Diffusion Models</div>
-              <div class="stat-pill">Generative AI</div>
-              <div class="stat-pill">Agentic AI</div>
-              <div class="stat-pill">LLMs</div>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero" aria-label="Hero">
+            <div class="hero-inner" role="region" aria-labelledby="heroHeading">
+                <div class="hero-left reveal">
+                    <div class="profile-wrap" title="Tanzin's photo">
+                        <img src="Tanzin.jpg" alt="Mohammed Abdul Al Arafat Tanzin portrait"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=60'"
+                        />
+                    </div>
+                    <div class="hero-name">
+                        <h1 id="heroHeading">Mohammed Abdul Al Arafat Tanzin</h1>
+                        <div class="role">Generative AI Researcher · MPhil Candidate</div>
+                    </div>
+                    <div class="hero-cta">
+                        <a class="btn btn-outline" href="#contact"><i class="fas fa-envelope"></i> Get in touch</a>
+                        <a class="btn btn-cv" href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" rel="noopener"><i class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-right reveal reveal-delay-2">
+                    <div class="hero-summary">
+                        <h3>Advancing Generative AI for Edge Deployment</h3>
+                        <p>My research focuses on Lightweight Diffusion Transformers, accelerated sampling techniques, and model compression to enable real-time generative vision on resource-constrained edge devices. I specialize in Diffusion Models, Generative AI, Agentic AI, and Large Language Models.</p>
+                        <div class="hero-meta">
+                            <div class="stat-pill">Diffusion Models</div>
+                            <div class="stat-pill">Generative AI</div>
+                            <div class="stat-pill">Agentic AI</div>
+                            <div class="stat-pill">LLMs</div>
+                        </div>
+                        <div class="hero-sub-text">
+                            Currently pursuing MPhil in AI at <strong>Universiti Teknologi Malaysia</strong>, Kuala Lumpur. Open to research collaborations and PhD opportunities.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="margin-top:12px;color:var(--muted);font-weight:600">
-              Currently pursuing MPhil in AI at Universiti Teknologi Malaysia, Kuala Lumpur. Open to research collaborations and PhD opportunities.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section" aria-labelledby="aboutTitle">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="aboutTitle">About Me</div>
-            <div class="section-sub">Generative AI Researcher focused on efficient on-device intelligence</div>
-          </div>
-        </div>
-        <div class="about-grid">
-          <div class="about-card about-bio">
-            <h3>Researcher & Innovator</h3>
-            <p>I am a Generative AI researcher currently pursuing my MPhil in Artificial Intelligence at Universiti Teknologi Malaysia (UTM) in Kuala Lumpur. I hold a B.Sc. in Computer Science and Engineering from BRAC University. My research focuses on Diffusion Models, Generative AI, Agentic AI, and Large Language Models, with a particular emphasis on deploying these capabilities on resource-constrained edge devices.</p>
-            <div class="about-stats" style="margin-top:10px">
-              <div class="about-stat">MPhil Researcher</div>
-              <div class="about-stat">Diffusion Models</div>
-              <div class="about-stat">4+ Publications</div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section section-alt" aria-labelledby="aboutTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="aboutTitle">About Me</div>
+                        <div class="section-sub">Generative AI Researcher focused on efficient on-device intelligence</div>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card about-bio reveal reveal-delay-1">
+                        <h3>Researcher &amp; Innovator</h3>
+                        <p>I am a Generative AI researcher currently pursuing my MPhil in Artificial Intelligence at Universiti Teknologi Malaysia (UTM) in Kuala Lumpur. I hold a B.Sc. in Computer Science and Engineering from BRAC University. My research focuses on Diffusion Models, Generative AI, Agentic AI, and Large Language Models, with a particular emphasis on deploying these capabilities on resource-constrained edge devices.</p>
+                        <div class="about-stats">
+                            <div class="about-stat">MPhil Researcher</div>
+                            <div class="about-stat">Diffusion Models</div>
+                            <div class="about-stat">4+ Publications</div>
+                        </div>
+                        <p style="margin-top:12px;color:var(--color-muted);font-size:0.9rem;">Currently seeking collaborative research opportunities and PhD positions in generative AI, efficient deep learning, and edge AI.</p>
+                    </div>
+                    <div class="about-card reveal reveal-delay-2">
+                        <h3 style="margin-bottom:10px;font-weight:700;">Quick Facts</h3>
+                        <ul class="about-list">
+                            <li><strong>📍 Location:</strong> Kuala Lumpur, Malaysia</li>
+                            <li><strong>🎓 Education:</strong> MPhil in AI — Universiti Teknologi Malaysia (UTM)</li>
+                            <li><strong>📚 Previous:</strong> B.Sc. in CSE — BRAC University (Graduated)</li>
+                            <li><strong>✉️ Email:</strong> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li>
+                        </ul>
+                        <div style="margin-top:16px;">
+                            <strong style="display:block;margin-bottom:10px;font-size:0.9rem;">Research Focus</strong>
+                            <div class="tag-group">
+                                <div class="tag">Diffusion Models</div>
+                                <div class="tag">Generative AI</div>
+                                <div class="tag">Agentic AI</div>
+                                <div class="tag">LLMs</div>
+                                <div class="tag">Edge AI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p style="margin-top:12px;color:var(--muted)">Currently seeking collaborative research opportunities and PhD positions in generative AI, efficient deep learning, and edge AI.</p>
-          </div>
-          <div class="about-card">
-            <h3 style="margin-bottom:8px">Quick facts</h3>
-            <ul style="list-style:none;color:var(--muted);font-weight:600;line-height:1.7;padding-left:0">
-              <li><strong>Location:</strong> Kuala Lumpur, Malaysia</li>
-              <li><strong>Education:</strong> MPhil in AI — Universiti Teknologi Malaysia (UTM)</li>
-              <li><strong>Previous:</strong> B.Sc. in CSE — BRAC University (Graduated)</li>
-              <li><strong>Email:</strong> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li>
-            </ul>
-            <div style="margin-top:14px">
-              <strong style="display:block;margin-bottom:8px">Research Focus</strong>
-              <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Diffusion Models</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Generative AI</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Agentic AI</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">LLMs</div>
-                <div style="background:#f1f7ff;padding:8px 10px;border-radius:10px;font-weight:700">Edge AI</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- RESEARCH SECTION (MPhil) -->
-    <section id="research" class="section" aria-labelledby="researchTitle" style="background:linear-gradient(180deg,#f8fbff,#fbfdff);">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="researchTitle">MPhil Research</div>
-            <div class="section-sub">Lightweight Diffusion Transformers for On-Device Generative Vision</div>
-          </div>
-        </div>
-        <div class="research-card">
-          <div style="margin-bottom:20px">
-            <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--primary)">Research Overview</h3>
-            <p style="color:var(--muted);line-height:1.6">This research addresses the critical challenge of deploying Generative AI on resource-constrained edge devices. Despite the success of Diffusion Models and Vision Transformers in cloud environments, their massive computational requirements prevent real-time deployment on smartphones, UAVs, and IoT cameras. This work develops Lightweight Diffusion Transformers (DiT) with accelerated sampling and compression techniques to enable real-time, high-fidelity generative vision at the edge.</p>
-          </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
-            <div style="background:#f8faff;padding:16px;border-radius:12px">
-              <i class="fas fa-microchip" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
-              <h4 style="margin-bottom:8px">Objective 1</h4>
-              <p style="color:var(--muted);font-size:0.92rem">Design a Lightweight Diffusion Transformer architecture optimized for low-latency inference on mobile NPUs.</p>
+        <!-- RESEARCH SECTION -->
+        <section id="research" class="section" aria-labelledby="researchTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="researchTitle">MPhil Research</div>
+                        <div class="section-sub">Lightweight Diffusion Transformers for On-Device Generative Vision</div>
+                    </div>
+                </div>
+                <div class="research-card reveal reveal-delay-1">
+                    <h3>Research Overview</h3>
+                    <p>This research addresses the critical challenge of deploying Generative AI on resource-constrained edge devices. Despite the success of Diffusion Models and Vision Transformers in cloud environments, their massive computational requirements prevent real-time deployment on smartphones, UAVs, and IoT cameras. This work develops Lightweight Diffusion Transformers (DiT) with accelerated sampling and compression techniques to enable real-time, high-fidelity generative vision at the edge.</p>
+                    <div class="objective-grid">
+                        <div class="objective-card reveal reveal-delay-1">
+                            <span class="obj-icon"><i class="fas fa-microchip"></i></span>
+                            <h4>Objective 1</h4>
+                            <p>Design a Lightweight Diffusion Transformer architecture optimized for low-latency inference on mobile NPUs.</p>
+                        </div>
+                        <div class="objective-card reveal reveal-delay-2">
+                            <span class="obj-icon"><i class="fas fa-compress-alt"></i></span>
+                            <h4>Objective 2</h4>
+                            <p>Investigate knowledge distillation and INT4 quantization to reduce memory footprint without significant loss in visual fidelity.</p>
+                        </div>
+                        <div class="objective-card reveal reveal-delay-3">
+                            <span class="obj-icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <h4>Objective 3</h4>
+                            <p>Develop an accelerated sampling pipeline that reduces diffusion iterations to under 5 steps for real-time applications.</p>
+                        </div>
+                        <div class="objective-card reveal reveal-delay-4">
+                            <span class="obj-icon"><i class="fas fa-drone"></i></span>
+                            <h4>Objective 4</h4>
+                            <p>Validate the proposed lightweight model in a low-light generative reconstruction case study for UAV-based surveillance.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="background:#f8faff;padding:16px;border-radius:12px">
-              <i class="fas fa-compress-alt" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
-              <h4 style="margin-bottom:8px">Objective 2</h4>
-              <p style="color:var(--muted);font-size:0.92rem">Investigate knowledge distillation and INT4 quantization to reduce memory footprint without significant loss in visual fidelity.</p>
-            </div>
-            <div style="background:#f8faff;padding:16px;border-radius:12px">
-              <i class="fas fa-tachometer-alt" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
-              <h4 style="margin-bottom:8px">Objective 3</h4>
-              <p style="color:var(--muted);font-size:0.92rem">Develop an accelerated sampling pipeline that reduces diffusion iterations to under 5 steps for real-time applications.</p>
-            </div>
-            <div style="background:#f8faff;padding:16px;border-radius:12px">
-              <i class="fas fa-drone" style="font-size:1.5rem;color:var(--primary);margin-bottom:10px;display:block"></i>
-              <h4 style="margin-bottom:8px">Objective 4</h4>
-              <p style="color:var(--muted);font-size:0.92rem">Validate the proposed lightweight model in a low-light generative reconstruction case study for UAV-based surveillance.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section" aria-labelledby="skillsTitle">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="skillsTitle">Technical Expertise</div>
-            <div class="section-sub">Specialized skills in generative AI and deep learning</div>
-          </div>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Generative AI</div><div style="color:var(--muted);font-weight:500">Diffusion Models, Transformers, GANs, VAEs</div></div>
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Agentic AI & LLMs</div><div style="color:var(--muted);font-weight:500">LangChain, LLM Agents, RAG, Prompt Engineering</div></div>
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Edge AI & Optimization</div><div style="color:var(--muted);font-weight:500">Model Compression, Quantization, Knowledge Distillation</div></div>
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Deep Learning</div><div style="color:var(--muted);font-weight:500">PyTorch, TensorFlow, CNNs, Vision Transformers</div></div>
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Programming</div><div style="color:var(--muted);font-weight:500">Python, C/C++, JavaScript, SQL, Git</div></div>
-          <div class="skill-card"><div style="font-weight:800;margin-bottom:6px">Data & Tools</div><div style="color:var(--muted);font-weight:500">Pandas, NumPy, Docker, Linux, CUDA, TensorRT</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH PROJECTS (Academic) -->
-    <section id="projects" class="section" aria-labelledby="projectsTitle">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="projectsTitle">Research Projects</div>
-            <div class="section-sub">Selected academic and research projects</div>
-          </div>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-thumb"><i class="fas fa-comments" style="font-size:28px;color:var(--primary)"></i></div>
-            <div class="project-title">ClusSumm</div>
-            <div class="project-desc">Advanced multimodal sentiment-based text summarizer that analyzes emotional context to generate more meaningful summaries.</div>
-            <div class="project-actions">
-              <a class="btn btn-outline" href="https://drive.google.com/file/d/1yHnls6FS_wcYy7Hpxebm_CJvV1o3Hbpn/view" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a class="btn btn-outline" href="https://www.kaggle.com/datasets/tanzinabdul/coursera-learning-feedback-multiple-domain-7k" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section section-alt" aria-labelledby="skillsTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="skillsTitle">Technical Expertise</div>
+                        <div class="section-sub">Specialized skills in generative AI and deep learning</div>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal reveal-delay-1">
+                        <div class="skill-name">Generative AI</div>
+                        <div class="skill-desc">Diffusion Models, Transformers, GANs, VAEs</div>
+                    </div>
+                    <div class="skill-card reveal reveal-delay-1">
+                        <div class="skill-name">Agentic AI &amp; LLMs</div>
+                        <div class="skill-desc">LangChain, LLM Agents, RAG, Prompt Engineering</div>
+                    </div>
+                    <div class="skill-card reveal reveal-delay-2">
+                        <div class="skill-name">Edge AI &amp; Optimization</div>
+                        <div class="skill-desc">Model Compression, Quantization, Knowledge Distillation</div>
+                    </div>
+                    <div class="skill-card reveal reveal-delay-2">
+                        <div class="skill-name">Deep Learning</div>
+                        <div class="skill-desc">PyTorch, TensorFlow, CNNs, Vision Transformers</div>
+                    </div>
+                    <div class="skill-card reveal reveal-delay-3">
+                        <div class="skill-name">Programming</div>
+                        <div class="skill-desc">Python, C/C++, JavaScript, SQL, Git</div>
+                    </div>
+                    <div class="skill-card reveal reveal-delay-3">
+                        <div class="skill-name">Data &amp; Tools</div>
+                        <div class="skill-desc">Pandas, NumPy, Docker, Linux, CUDA, TensorRT</div>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="project-card">
-            <div class="project-thumb"><i class="fas fa-chart-bar" style="font-size:28px;color:var(--primary)"></i></div>
-            <div class="project-title">Hybrid ML Framework for Audience Sentiment Analysis</div>
-            <div class="project-desc">Developed a hybrid ML framework combining sentiment analysis of user comments with engagement metrics to mitigate misleading like/dislike ratios.</div>
-            <div class="project-actions">
-              <a class="btn btn-outline" href="https://drive.google.com/file/d/1Up6B8aSpBPtNti5BypQSCru3TCvI0jPf/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf"></i> Pre-print</a>
-              <a class="btn btn-outline" href="https://www.kaggle.com/datasets/tanzinabdul/bangla-movie-and-drama-comments-sentiment-dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section" aria-labelledby="projectsTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="projectsTitle">Research Projects</div>
+                        <div class="section-sub">Selected academic and research projects</div>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal reveal-delay-1">
+                        <div class="project-thumb"><span class="thumb-icon"><i class="fas fa-comments"></i></span></div>
+                        <div class="project-title">ClusSumm</div>
+                        <div class="project-desc">Advanced multimodal sentiment-based text summarizer that analyzes emotional context to generate more meaningful summaries.</div>
+                        <div class="project-actions">
+                            <a class="btn btn-outline btn-sm" href="https://drive.google.com/file/d/1yHnls6FS_wcYy7Hpxebm_CJvV1o3Hbpn/view" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a class="btn btn-outline btn-sm" href="https://www.kaggle.com/datasets/tanzinabdul/coursera-learning-feedback-multiple-domain-7k" target="_blank" rel="noopener"><i class="fas fa-database"></i> Dataset</a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-2">
+                        <div class="project-thumb"><span class="thumb-icon"><i class="fas fa-chart-bar"></i></span></div>
+                        <div class="project-title">Hybrid ML Framework for Audience Sentiment Analysis</div>
+                        <div class="project-desc">Developed a hybrid ML framework combining sentiment analysis of user comments with engagement metrics to mitigate misleading like/dislike ratios.</div>
+                        <div class="project-actions">
+                            <a class="btn btn-outline btn-sm" href="https://drive.google.com/file/d/1Up6B8aSpBPtNti5BypQSCru3TCvI0jPf/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Pre-print</a>
+                            <a class="btn btn-outline btn-sm" href="https://www.kaggle.com/datasets/tanzinabdul/bangla-movie-and-drama-comments-sentiment-dataset" target="_blank" rel="noopener"><i class="fas fa-database"></i> Dataset</a>
+                        </div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-3">
+                        <div class="project-thumb"><span class="thumb-icon"><i class="fas fa-fish"></i></span></div>
+                        <div class="project-title">Shrimp Population Research</div>
+                        <div class="project-desc">Underwater computer vision techniques for sustainable aquaculture population estimation.</div>
+                        <div class="project-actions"><a class="btn btn-outline btn-sm" href="#"><i class="fab fa-github"></i> Code</a></div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-4">
+                        <div class="project-thumb"><span class="thesis-badge">Undergraduate Thesis</span></div>
+                        <div class="project-title">ReCAN — Lightweight Residual Channel Attention Network</div>
+                        <div style="font-weight:600;color:var(--color-muted);margin-bottom:4px;font-size:0.85rem;">Completed — Oct 2025 · Grade: A (95%) | BRAC University</div>
+                        <div class="project-desc">Designed ReCAN: an efficient CNN-attention hybrid using ResNet-18 base + alternating skip connections and channel attention. Achieves 8–12% higher accuracy while remaining lightweight (~14.47M params).</div>
+                        <div class="project-actions">
+                            <a class="btn btn-outline btn-sm" href="https://dspace.bracu.ac.bd/items/97629ad8-d62b-4d46-9fc9-4df39e1063ac" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Thesis</a>
+                            <button class="btn btn-outline btn-sm read-abstract" data-title="ReCAN — Lightweight Residual Channel Attention Network" data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art results on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential layers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that careful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.">
+                                <i class="fas fa-book-open"></i> Read Abstract
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </div>
-          </article>
-          <article class="project-card">
-            <div class="project-thumb"><i class="fas fa-fish" style="font-size:28px;color:var(--primary)"></i></div>
-            <div class="project-title">Shrimp Population Research</div>
-            <div class="project-desc">Underwater computer vision techniques for sustainable aquaculture population estimation.</div>
-            <div class="project-actions"><a class="btn btn-outline" href="#"><i class="fab fa-github"></i> Code</a></div>
-          </article>
-          <article class="project-card thesis-card">
-            <div class="project-thumb"><div style="font-size:16px;font-weight:700;color:var(--primary);">Undergraduate Thesis</div></div>
-            <div class="project-title">ReCAN — Lightweight Residual Channel Attention Network</div>
-            <div style="font-weight:700;color:var(--muted);margin-bottom:6px">Completed — Oct 2025 • Grade: A (95%) | BRAC University</div>
-            <div class="project-desc">Designed ReCAN: an efficient CNN-attention hybrid using ResNet-18 base + alternating skip connections and channel attention. Achieves 8–12% higher accuracy while remaining lightweight (~14.47M params).</div>
-            <div class="project-actions">
-              <a class="btn btn-outline" href="https://dspace.bracu.ac.bd/items/97629ad8-d62b-4d46-9fc9-4df39e1063ac" target="_blank"><i class="fas fa-external-link-alt"></i> View Thesis</a>
-              <button class="btn btn-outline read-abstract" data-title="ReCAN — Lightweight Residual Channel Attention Network" data-abstract="This thesis presents ReCAN, a lightweight convolutional neural network tailored for efficient and accurate medical image classification on the MedMNIST benchmark. Motivated by the need for compact architectures that can deliver state-of-the-art results on resource-constrained hardware, this work integrates a ResNet-18 backbone with a novel multi-stage channel attention mechanism comprising five sequential layers with varying reduction ratios. The architecture is methodologically founded on iterative experimentation with dilated convolutions, advanced residual connections, and ablation studies on attention modules to optimize the trade-off between model complexity and classification performance. Comprehensive evaluations on multiple MedMNIST datasets, including PathMNIST and others, demonstrate that ReCAN consistently outperforms MedMamba—both its Tiny in terms of accuracy, while achieving lower parameter counts and floating point operations (FLOPs) sometime and larger variants as well in terms of accuracy. The results establish that careful design of channel attention and skip connections within a CNN backbone can surpass more computationally intensive models without sacrificing generalization. ReCAN thus contributes a new, efficient deep learning baseline for medical image analysis, supporting future research in scalable biomedical AI applications.
-"><i class="fas fa-book-open"></i> Read Abstract</button>
+        </section>
+
+        <!-- ENTREPRENEUR SECTION -->
+        <section id="entrepreneur" class="section section-alt" aria-labelledby="entrepreneurTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="entrepreneurTitle">Entrepreneurial Experience</div>
+                        <div class="section-sub">Founder — <strong>neXet Lab</strong> · <a href="https://nexetlab.vercel.app/" target="_blank" rel="noopener" style="font-weight:700;">Visit neXet Lab →</a></div>
+                    </div>
+                </div>
+                <p style="color:var(--color-text-secondary);margin-bottom:20px;font-size:0.92rem;">neXet Lab is a web &amp; AI product studio focused on building performant websites and automation tools. Below are selected delivered projects.</p>
+                <div class="projects-grid" role="list" aria-label="neXet Lab delivered projects">
+                    <article class="project-card reveal reveal-delay-1" role="listitem">
+                        <div class="project-thumb"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="CM Rendering screenshot" loading="lazy" /></div>
+                        <div class="project-title">CM Rendering</div>
+                        <div class="project-desc">A modern rendering and painting service website, focusing on high-quality rendering solutions.</div>
+                        <div class="project-actions"><a class="btn btn-primary btn-sm" href="https://cmrendering.com.au/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a></div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-2" role="listitem">
+                        <div class="project-thumb"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="Greenacre Auto Electrical" loading="lazy" /></div>
+                        <div class="project-title">Greenacre Auto Electrical</div>
+                        <div class="project-desc">Professional auto electrical service website offering repair, maintenance, and installations for vehicles.</div>
+                        <div class="project-actions"><a class="btn btn-primary btn-sm" href="https://www.greenacreautoelectrical.com.au/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a></div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-3" role="listitem">
+                        <div class="project-thumb"><img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=60" alt="Get Found on Maps" loading="lazy" /></div>
+                        <div class="project-title">Get Found on Maps</div>
+                        <div class="project-desc">A modern React site for a digital agency with smooth animations and a custom hero banner.</div>
+                        <div class="project-actions"><a class="btn btn-primary btn-sm" href="https://getfoundonmaps.com.au/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a></div>
+                    </article>
+                    <article class="project-card reveal reveal-delay-4" role="listitem">
+                        <div class="project-thumb"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=60" alt="Central Grounds Espresso Bar" loading="lazy" /></div>
+                        <div class="project-title">Central Grounds Espresso Bar</div>
+                        <div class="project-desc">React site with clean UI and performance optimizations delivering a modern web experience.</div>
+                        <div class="project-actions"><a class="btn btn-primary btn-sm" href="https://centralgroundsespressobar.com.au/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Project</a></div>
+                    </article>
+                </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ENTREPRENEURIAL EXPERIENCE (neXet Lab) - COPIED FROM PREVIOUS -->
-    <section id="entrepreneur" class="section" aria-labelledby="entrepreneurTitle" style="background:linear-gradient(180deg,#fbfdff,#f8fbff);">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <div class="section-title" id="entrepreneurTitle">Entrepreneurial Experience</div>
-            <div class="section-sub">Founder — <strong>neXet Lab</strong> • <a href="https://nexetlab.vercel.app/" target="_blank" style="font-weight:800">Visit neXet Lab</a></div>
-          </div>
-        </div>
-        <p style="color:var(--muted);margin-bottom:12px">neXet Lab is a web & AI product studio focused on building performant websites and automation tools. Below are selected delivered projects.</p>
-        <div class="projects-grid" role="list" aria-label="neXet Lab delivered projects">
-          <article class="project-card" role="listitem">
-            <div class="project-thumb"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="CM Rendering screenshot"></div>
-            <div class="project-title">CM Rendering</div>
-            <div class="project-desc">A modern rendering and painting service website, focusing on high-quality rendering solutions.</div>
-            <div class="project-actions"><a class="btn btn-primary" href="https://cmrendering.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a></div>
-          </article>
-          <article class="project-card" role="listitem">
-            <div class="project-thumb"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="Greenacre Auto Electrical"></div>
-            <div class="project-title">Greenacre Auto Electrical</div>
-            <div class="project-desc">Professional auto electrical service website offering repair, maintenance, and installations for vehicles.</div>
-            <div class="project-actions"><a class="btn btn-primary" href="https://www.greenacreautoelectrical.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a></div>
-          </article>
-          <article class="project-card" role="listitem">
-            <div class="project-thumb"><img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=60" alt="Get Found on Maps"></div>
-            <div class="project-title">Get Found on Maps</div>
-            <div class="project-desc">A modern React site for a digital agency with smooth animations and a custom hero banner.</div>
-            <div class="project-actions"><a class="btn btn-primary" href="https://getfoundonmaps.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a></div>
-          </article>
-          <article class="project-card" role="listitem">
-            <div class="project-thumb"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=60" alt="Central Grounds Espresso Bar"></div>
-            <div class="project-title">Central Grounds Espresso Bar</div>
-            <div class="project-desc">React site with clean UI and performance optimizations delivering a modern web experience.</div>
-            <div class="project-actions"><a class="btn btn-primary" href="https://centralgroundsespressobar.com.au/" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section" aria-labelledby="certificationsTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="certificationsTitle">Certifications</div>
+                        <div class="section-sub">Professional certifications and courses</div>
+                    </div>
+                </div>
+                <div class="certifications-grid">
+                    <div class="cert-card reveal reveal-delay-1">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-google"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Introduction to Generative AI</div>
+                                <div class="cert-org">Google</div>
+                                <div class="cert-meta"><span>Issued: May 2024</span></div>
+                                <div class="cert-link"><a href="https://www.cloudskillsboost.google/public_profiles/2fc659f9-580f-4aa2-89e8-53eff46ced3c/badges/9012845" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card reveal reveal-delay-1">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-coursera"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Machine Learning Specialization</div>
+                                <div class="cert-org">DeepLearning.AI, Stanford</div>
+                                <div class="cert-meta"><span>Issued: Dec 2024</span></div>
+                                <div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/specialization/DCLDXJKRROOU" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card reveal reveal-delay-2">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-coursera"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Advanced Learning Algorithms</div>
+                                <div class="cert-org">DeepLearning.AI, Stanford</div>
+                                <div class="cert-meta"><span>Issued: Aug 2024</span></div>
+                                <div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/records/LDLIN8PY49TT" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card reveal reveal-delay-2">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-google"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Introduction to Large Language Models</div>
+                                <div class="cert-org">Google Cloud</div>
+                                <div class="cert-meta"><span>Issued: May 2024</span></div>
+                                <div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/records/LEJX2EXVXXFC" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card reveal reveal-delay-3">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-hackerrank"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Problem Solving (Basic)</div>
+                                <div class="cert-org">HackerRank</div>
+                                <div class="cert-meta"><span>Issued: Dec 2023</span></div>
+                                <div class="cert-link"><a href="https://www.hackerrank.com/certificates/3b26b4d4f409" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-card reveal reveal-delay-3">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fab fa-hackerrank"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name">Python (Basic)</div>
+                                <div class="cert-org">HackerRank</div>
+                                <div class="cert-meta"><span>Issued: Dec 2023</span></div>
+                                <div class="cert-link"><a href="https://www.hackerrank.com/certificates/a5fd4fce5f4f" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Credential</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- CERTIFICATIONS SECTION -->
-    <section id="certifications" class="section" aria-labelledby="certificationsTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-title" id="certificationsTitle">Certifications</div><div class="section-sub">Professional certifications and courses</div></div></div>
-        <div class="certifications-grid">
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-google"></i></div><div class="cert-details"><div class="cert-name">Introduction to Generative AI</div><div class="cert-org">Google</div><div class="cert-meta"><span>Issued: May 2024</span></div><div class="cert-link"><a href="https://www.cloudskillsboost.google/public_profiles/2fc659f9-580f-4aa2-89e8-53eff46ced3c/badges/9012845" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-coursera"></i></div><div class="cert-details"><div class="cert-name">Machine Learning Specialization</div><div class="cert-org">DeepLearning.AI, Stanford</div><div class="cert-meta"><span>Issued: Dec 2024</span></div><div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/specialization/DCLDXJKRROOU" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-coursera"></i></div><div class="cert-details"><div class="cert-name">Advanced Learning Algorithms</div><div class="cert-org">DeepLearning.AI, Stanford</div><div class="cert-meta"><span>Issued: Aug 2024</span></div><div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/records/LDLIN8PY49TT" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-google"></i></div><div class="cert-details"><div class="cert-name">Introduction to Large Language Models</div><div class="cert-org">Google Cloud</div><div class="cert-meta"><span>Issued: May 2024</span></div><div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/records/LEJX2EXVXXFC" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-hackerrank"></i></div><div class="cert-details"><div class="cert-name">Problem Solving (Basic)</div><div class="cert-org">HackerRank</div><div class="cert-meta"><span>Issued: Dec 2023</span></div><div class="cert-link"><a href="https://www.hackerrank.com/certificates/3b26b4d4f409" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-          <div class="cert-card"><div class="cert-header"><div class="cert-icon"><i class="fab fa-hackerrank"></i></div><div class="cert-details"><div class="cert-name">Python (Basic)</div><div class="cert-org">HackerRank</div><div class="cert-meta"><span>Issued: Dec 2023</span></div><div class="cert-link"><a href="https://www.hackerrank.com/certificates/a5fd4fce5f4f" target="_blank" class="btn btn-outline">View Credential</a></div></div></div></div>
-        </div>
-      </div>
-    </section>
+        <!-- HONORS -->
+        <section id="honors" class="section section-alt" aria-labelledby="honorsTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="honorsTitle">Honors &amp; Awards</div>
+                        <div class="section-sub">Recognition for academic and professional achievements</div>
+                    </div>
+                </div>
+                <div class="honors-list">
+                    <div class="honor-item reveal reveal-delay-1">
+                        <div class="honor-title">🏆 Consolation Prize (4th Place) – AI Showcase @ FAI 2026</div>
+                        <div class="honor-details">
+                            <strong>Project:</strong> AI-Broiler: Smart Broiler Weight Prediction for Flock Monitoring System<br />
+                            <strong>Team:</strong> AgroVision-AI<br />
+                            <strong>Category:</strong> Postgraduate<br />
+                            <strong>Organizer:</strong> Faculty of Artificial Intelligence, Universiti Teknologi Malaysia (UTM)<br />
+                            <strong>Date:</strong> 24 June 2026<br />
+                            Recognized for developing an AI-driven computer vision system to enable automatic, stress-free flock growth monitoring for poultry farmers. Supervised by Dr. Rudzidatul Dziyauddin.
+                            <div style="margin-top:8px;"><a href="https://tinyurl.com/mppvtt4m" target="_blank" rel="noopener" style="font-weight:700;">Read more →</a></div>
+                        </div>
+                    </div>
+                    <div class="honor-item reveal reveal-delay-2">
+                        <div class="honor-title">📝 Reviewer, SCOPE - ICLR 2025 Workshop</div>
+                        <div class="honor-details">Nominated by the Program Chair of SCOPE - ICLR 2025 as an urgent reviewer. (Feb 2025)</div>
+                    </div>
+                    <div class="honor-item reveal reveal-delay-3">
+                        <div class="honor-title">🥈 Runner-Up, National Soccer Bot Competition</div>
+                        <div class="honor-details">Issued by: Robotics Club of BRAC University, Dhaka, Bangladesh (Mar 2023). Recognized for robotics and programming excellence.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- HONORS & AWARDS -->
-<section id="honors" class="section" aria-labelledby="honorsTitle">
-  <div class="container">
-    <div class="section-header"><div><div class="section-title" id="honorsTitle">Honors & Awards</div><div class="section-sub">Recognition for academic and professional achievements</div></div></div>
-    <div class="honors-list">
-      <div class="honor-item">
-        <div class="honor-title">Consolation Prize (4th Place) – AI Showcase @ FAI 2026</div>
-        <div class="honor-details">
-          <strong>Project:</strong> AI-Broiler: Smart Broiler Weight Prediction for Flock Monitoring System<br>
-          <strong>Team:</strong> AgroVision-AI<br>
-          <strong>Category:</strong> Postgraduate<br>
-          <strong>Organizer:</strong> Faculty of Artificial Intelligence, Universiti Teknologi Malaysia (UTM)<br>
-          <strong>Date:</strong> 24 June 2026<br>
-          Recognized for developing an AI-driven computer vision system to enable automatic, stress-free flock growth monitoring for poultry farmers. Supervised by Dr. Rudzidatul Dziyauddin.
-          <div style="margin-top:6px;"><a href="https://tinyurl.com/mppvtt4m" target="_blank" style="font-weight:700;">Read more →</a></div>
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="section" aria-labelledby="pubTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="pubTitle">Publications</div>
+                        <div class="section-sub">Research contributions</div>
+                    </div>
+                </div>
+                <div class="pub-grid">
+                    <article class="pub-card reveal reveal-delay-1">
+                        <span class="pub-tag pub-tag-journal">Journal</span>
+                        <div class="pub-title">Advanced Neural Network Architectures for Tomato Leaf Disease Diagnosis</div>
+                        <div class="pub-meta">Discover Sustainability — Q2 Journal · Published Dec 2024</div>
+                        <div class="pub-links">
+                            <a href="https://link.springer.com/article/10.1007/s43621-025-01149-1" target="_blank" rel="noopener">Journal Link</a>
+                            <button class="btn btn-outline btn-sm read-abstract" data-title="Tomato Leaf Disease Diagnosis" data-abstract="This study addresses the critical challenge of detecting and classifying tomato leaf diseases using advanced deep learning technologies, a pivotal step in enhancing productivity within precision agriculture. We developed a novel diagnostic system capable of categorizing tomato leaves into ten distinct classes—nine corresponding to specific diseases and one for healthy leaves. The system incorporates a dataset of 6,000 images, which underwent extensive preprocessing, including resizing to 256 × 256 pixels, grayscale conversion, normalization, masking, and augmentation, to optimize input quality for the model. Our approach stands out through the integration of state-of-the-art neural network architectures—VGG19, Vision Transformer (ViT), EfficientNetV2, ConvNeXt—and a novel hybrid model specifically designed to leverage the strengths of diverse architectures. Performance evaluation demonstrated that the hybrid model outperformed all individual architectures, achieving an exceptional classification accuracy of 98%, ensuring robust disease detection under varying conditions. To enhance interpretability, Grad-CAM and LIME techniques were employed, highlighting critical image regions and influential features for classification. This comprehensive and innovative approach not only deepens understanding in plant pathology through automated systems but also sets a new benchmark for future advancements in plant disease detection leveraging machine learning.">Read Abstract</button>
+                        </div>
+                    </article>
+                    <article class="pub-card reveal reveal-delay-2">
+                        <span class="pub-tag pub-tag-conference">Conference</span>
+                        <div class="pub-title">Forecasting Literacy Development in Bangladesh</div>
+                        <div class="pub-meta">ECCE 2025 · Accepted Feb 2025</div>
+                        <div class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11014044" target="_blank" rel="noopener">Paper</a>
+                            <button class="btn btn-outline btn-sm read-abstract" data-title="Literacy Development Forecasting" data-abstract="In general in Bangladesh there have been some progress in literacy rates during the last couple of decades. Though literacy has persisted into the twenty first century as a major concern on the international level, it is still difficult to attain universal literacy. In this study, the possibility of using machine learning and mixed models to predict literacy in Bangladesh is considered, with a focus on the most accurate prediction of literacy levels by the end of the 2030 period. From a set of socio-economic and demographic indicators – including GDP, population, unemployment rate and life expectancy, we assessed few given predictive models. These were Linear Regression, SVR, Gradient Boosting, Random Forest, XGBoost, ANN, LSTM, CNN, RNN, GRU, LSTM + ARIMA, ANN + ARIMA, CNN + ARIMA, GRU + ARIMA. The hybrid models performed better than others in all parameters such as MAE, MSE, & R2 Score which again validate the ability of the hybrid models to capture temporal and non-linear dynamics inherent in the data. Further, based on the ARIMA-models analysis, literacy rate that was below 60% a decade ago is expected to reach nearly 90% in 2030. It also discusses how the policy-driven hybrid modeling can be useful and promotes data drive approach in perusing the SDG goals.">Read Abstract</button>
+                        </div>
+                    </article>
+                    <article class="pub-card reveal reveal-delay-3">
+                        <span class="pub-tag pub-tag-conference">Conference</span>
+                        <div class="pub-title">PhishVQC: Phishing URL Detection with Quantum Classifier</div>
+                        <div class="pub-meta">ISACC 2025 · Accepted Jan 2025</div>
+                        <div class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10969366" target="_blank" rel="noopener">Paper</a>
+                            <button class="btn btn-outline btn-sm read-abstract" data-title="PhishVQC" data-abstract="Phishing URL detection is crucial in cybersecurity as malicious websites disguise themselves to steal sensitive information. Traditional machine learning techniques struggle to perform well in complex real-world scenarios due to large datasets and intricate patterns. Motivated by quantum computing, this paper proposes using Variational Quantum Classifiers (VQC) to enhance phishing URL detection. We present PhishVQC, a quantum model that combines quantum feature maps and variational ansatzes such as RealAmplitude and EfficientSU2. The model is evaluated across two experimental setups with varying dataset sizes and feature map repetitions. PhishVQC achieves a maximum macro average F1-score of 0.89, showing a 22% improvement over prior studies. This highlights the potential of quantum machine learning to improve phishing detection accuracy. The study also notes computational challenges, with execution wall times increasing as dataset size grows.">Read Abstract</button>
+                        </div>
+                    </article>
+                    <article class="pub-card reveal reveal-delay-4">
+                        <span class="pub-tag pub-tag-conference">Conference</span>
+                        <div class="pub-title">Hybrid CNN &amp; Random Forest for Water Level Prediction</div>
+                        <div class="pub-meta">ECCE 2025 · Accepted Feb 2025</div>
+                        <div class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11013997" target="_blank" rel="noopener">Paper</a>
+                            <button class="btn btn-outline btn-sm read-abstract" data-title="Water Level Prediction" data-abstract="The Kaptai Reservoir, the country's largest artificial freshwater body plays a vital role in hydroelectric power generation, flood control and agricultural support. However, its water levels are subject to fluctuations influenced by both climatic variations and increasing human consumption. Despite its crucial environmental impact there is a lack of research on the Kaptai Reservoir water body. The escalating effects of climate change present significant challenges to water resource management particularly in vulnerable regions such as Bangladesh. This paper presents a machine learning-based approach utilizing Convolutional Neural Networks (CNN) for feature extraction and Random Forest Regression (RFR) for Predicting water level fluctuations in the Kaptai Reservoir. Historical climate data from 2013 to 2022 including rainfall, temperature, and humidity were used to train the model. The CNN model effectively captured both temporal and spatial relationships in the water level time series while the RFR model demonstrated high prediction accuracy with a Root Mean Square Error (RMSE) of 0.5267 and a Mean Absolute Error (MAE) of 0.3128. These results highlight the model's strong performance and its potential for real-time water management and decision-making aimed at mitigating the impacts of climate change on the reservoir. The findings offer valuable insights for policymakers working to ensure the long-term sustainability and resilience of water resources in Bangladesh.">Read Abstract</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-alt" aria-labelledby="contactTitle">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <div class="section-title" id="contactTitle">Let's Connect</div>
+                        <div class="section-sub">Open to research collaborations and PhD opportunities</div>
+                    </div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card reveal reveal-delay-1">
+                        <h3 style="margin-bottom:10px;font-weight:700;">Get In Touch</h3>
+                        <p style="color:var(--color-text-secondary);margin-bottom:14px;font-size:0.92rem;">I'm open to collaborations, PhD opportunities, and research positions in generative AI, diffusion models, and edge AI.</p>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</li>
+                            <li><i class="fas fa-university"></i> Universiti Teknologi Malaysia (UTM)</li>
+                        </ul>
+                        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
+                            <a class="btn btn-outline btn-sm" href="https://github.com/TanzinAbdul" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                            <a class="btn btn-outline btn-sm" href="https://www.linkedin.com/in/tanzin-abdul/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a class="btn btn-outline btn-sm" href="https://scholar.google.com/citations?hl=en&user=O9MIHNIAAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        </div>
+                    </div>
+                    <div class="contact-card contact-card-centered reveal reveal-delay-2">
+                        <div style="font-weight:800;font-size:1.05rem;">Research Collaboration</div>
+                        <div style="color:var(--color-muted);font-size:0.9rem;">Interested in generative AI, diffusion models, or edge AI research? Let's connect.</div>
+                        <a class="btn btn-primary" href="mailto:tanzinabdul@gmail.com"><i class="fas fa-paper-plane"></i> Send Message</a>
+                        <a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" rel="noopener" class="btn btn-cv"><i class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">&copy; 2026 Mohammed Abdul Al Arafat Tanzin — All rights reserved.</div>
+        </footer>
+    </main>
+
+    <!-- Abstract Modal -->
+    <div class="modal-overlay" id="abstractModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">Abstract</div>
+                <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="modalBody">Abstract content will appear here.</div>
         </div>
-      </div>
-      <div class="honor-item"><div class="honor-title">Reviewer, SCOPE - ICLR 2025 Workshop</div><div class="honor-details">Nominated by the Program Chair of SCOPE - ICLR 2025 as an urgent reviewer. (Feb 2025)</div></div>
-      <div class="honor-item"><div class="honor-title">Runner-Up, National Soccer Bot Competition</div><div class="honor-details">Issued by: Robotics Club of BRAC University, Dhaka, Bangladesh (Mar 2023). Recognized for robotics and programming excellence.</div></div>
     </div>
-  </div>
-    </section>
 
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section" aria-labelledby="pubTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-title" id="pubTitle">Publications</div><div class="section-sub">Research contributions</div></div></div>
-        <div class="pub-grid">
-          <article class="pub-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span class="pub-tag pub-tag-journal">Journal</span><div style="font-weight:800">Advanced Neural Network Architectures for Tomato Leaf Disease Diagnosis</div></div><div class="pub-meta">Discover Sustainability — Q2 Journal • Published Dec 2024</div><div class="pub-links"><a href="https://link.springer.com/article/10.1007/s43621-025-01149-1" target="_blank">Journal Link</a><button class="btn btn-outline read-abstract" data-title="Tomato Leaf Disease Diagnosis" data-abstract="This study addresses the critical challenge of detecting and classifying tomato leaf diseases using advanced deep learning technologies, a pivotal step in enhancing productivity within precision agriculture. We developed a novel diagnostic system capable of categorizing tomato leaves into ten distinct classes—nine corresponding to specific diseases and one for healthy leaves. The system incorporates a dataset of 6,000 images, which underwent extensive preprocessing, including resizing to 256 × 256 pixels, grayscale conversion, normalization, masking, and augmentation, to optimize input quality for the model. Our approach stands out through the integration of state-of-the-art neural network architectures—VGG19, Vision Transformer (ViT), EfficientNetV2, ConvNeXt—and a novel hybrid model specifically designed to leverage the strengths of diverse architectures. Performance evaluation demonstrated that the hybrid model outperformed all individual architectures, achieving an exceptional classification accuracy of 98%, ensuring robust disease detection under varying conditions. To enhance interpretability, Grad-CAM and LIME techniques were employed, highlighting critical image regions and influential features for classification. This comprehensive and innovative approach not only deepens understanding in plant pathology through automated systems but also sets a new benchmark for future advancements in plant disease detection leveraging machine learning.">Read Abstract</button></div></article>
-          <article class="pub-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span class="pub-tag pub-tag-conference">Conference</span><div style="font-weight:800">Forecasting Literacy Development in Bangladesh</div></div><div class="pub-meta">ECCE 2025 • Accepted Feb 2025</div><div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/11014044" target="_blank">Paper</a><button class="btn btn-outline read-abstract" data-title="Literacy Development Forecasting" data-abstract="In general in Bangladesh there have been some progress in literacy rates during the last couple of decades. Though literacy has persisted into the twenty first century as a major concern on the international level, it is still difficult to attain universal literacy. In this study, the possibility of using machine learning and mixed models to predict literacy in Bangladesh is considered, with a focus on the most accurate prediction of literacy levels by the end of the 2030 period. From a set of socio-economic and demographic indicators – including GDP, population, unemployment rate and life expectancy, we assessed few given predictive models. These were Linear Regression, SVR, Gradient Boosting, Random Forest, XGBoost, ANN, LSTM, CNN, RNN, GRU, LSTM + ARIMA, ANN + ARIMA, CNN + ARIMA, GRU + ARIMA. The hybrid models performed better than others in all parameters such as MAE, MSE, & R2 Score which again validate the ability of the hybrid models to capture temporal and non-linear dynamics inherent in the data. Further, based on the ARIMA-models analysis, literacy rate that was below 60% a decade ago is expected to reach nearly 90% in 2030. It also discusses how the policy-driven hybrid modeling can be useful and promotes data drive approach in perusing the SDG goals.">Read Abstract</button></div></article>
-          <article class="pub-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span class="pub-tag pub-tag-conference">Conference</span><div style="font-weight:800">PhishVQC: Phishing URL Detection with Quantum Classifier</div></div><div class="pub-meta">ISACC 2025 • Accepted Jan 2025</div><div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/10969366" target="_blank">Paper</a><button class="btn btn-outline read-abstract" data-title="PhishVQC" data-abstract="Phishing URL detection is crucial in cybersecurity as malicious websites disguise themselves to steal sensitive information. Traditional machine learning techniques struggle to perform well in complex real-world scenarios due to large datasets and intricate patterns. Motivated by quantum computing, this paper proposes using Variational Quantum Classifiers (VQC) to enhance phishing URL detection. We present PhishVQC, a quantum model that combines quantum feature maps and variational ansatzes such as RealAmplitude and EfficientSU2. The model is evaluated across two experimental setups with varying dataset sizes and feature map repetitions. PhishVQC achieves a maximum macro average F1-score of 0.89, showing a 22% improvement over prior studies. This highlights the potential of quantum machine learning to improve phishing detection accuracy. The study also notes computational challenges, with execution wall times increasing as dataset size grows.">Read Abstract</button></div></article>
-          <article class="pub-card"><div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span class="pub-tag pub-tag-conference">Conference</span><div style="font-weight:800">Hybrid CNN & Random Forest for Water Level Prediction</div></div><div class="pub-meta">ECCE 2025 • Accepted Feb 2025</div><div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/11013997" target="_blank">Paper</a><button class="btn btn-outline read-abstract" data-title="Water Level Prediction" data-abstract="The Kaptai Reservoir, the country’s largest artificial freshwater body plays a vital role in hydroelectric power generation, flood control and agricultural support. However, its water levels are subject to fluctuations influenced by both climatic variations and increasing human consumption. Despite its crucial environmental impact there is a lack of research on the Kaptai Reservoir water body. The escalating effects of climate change present significant challenges to water resource management particularly in vulnerable regions such as Bangladesh. This paper presents a machine learning-based approach utilizing Convolutional Neural Networks (CNN) for feature extraction and Random Forest Regression (RFR) for Predicting water level fluctuations in the Kaptai Reservoir. Historical climate data from 2013 to 2022 including rainfall, temperature, and humidity were used to train the model. The CNN model effectively captured both temporal and spatial relationships in the water level time series while the RFR model demonstrated high prediction accuracy with a Root Mean Square Error (RMSE) of 0.5267 and a Mean Absolute Error (MAE) of 0.3128. These results highlight the model’s strong performance and its potential for real-time water management and decision-making aimed at mitigating the impacts of climate change on the reservoir. The findings offer valuable insights for policymakers working to ensure the long-term sustainability and resilience of water resources in Bangladesh.">Read Abstract</button></div></article>
-        </div>
-      </div>
-    </section>
+    <script>
+        (function() {
+            'use strict';
 
-    <!-- CONTACT -->
-    <section id="contact" class="section" aria-labelledby="contactTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-title" id="contactTitle">Let's Connect</div><div class="section-sub">Open to research collaborations and PhD opportunities</div></div></div>
-        <div class="contact-grid">
-          <div class="contact-card"><h3 style="margin-bottom:8px">Get In Touch</h3><p style="color:var(--muted);margin-bottom:10px">I'm open to collaborations, PhD opportunities, and research positions in generative AI, diffusion models, and edge AI.</p>
-            <ul style="list-style:none;padding-left:0;font-weight:700;color:var(--muted);line-height:1.8"><li><i class="fas fa-envelope" style="margin-right:8px;color:var(--primary)"></i> <a href="mailto:tanzinabdul@gmail.com">tanzinabdul@gmail.com</a></li><li><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--primary)"></i> Kuala Lumpur, Malaysia</li><li><i class="fas fa-university" style="margin-right:8px;color:var(--primary)"></i> Universiti Teknologi Malaysia (UTM)</li></ul>
-            <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-outline" href="https://github.com/TanzinAbdul" target="_blank"><i class="fab fa-github"></i> GitHub</a><a class="btn btn-outline" href="https://www.linkedin.com/in/tanzin-abdul/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><a class="btn btn-outline" href="https://scholar.google.com/citations?hl=en&user=O9MIHNIAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></div></div>
-          <div class="contact-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px"><div style="font-weight:800;font-size:1.05rem">Research Collaboration</div><div style="color:var(--muted)">Interested in generative AI, diffusion models, or edge AI research? Let's connect.</div><a class="btn btn-primary" href="mailto:tanzinabdul@gmail.com"><i class="fas fa-paper-plane"></i> Send Message</a><a href="https://drive.google.com/file/d/1por1nFi6QY7_m6mCywiVQv-61s6qD7x2/view" target="_blank" class="btn btn-cv"><i class="fas fa-download"></i> Download CV</a></div>
-        </div>
-      </div>
-    </section>
+            // --- DOM ELEMENTS ---
+            const navbar = document.getElementById('navbar');
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileClose = document.getElementById('mobileClose');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            const desktopNavLinks = document.querySelectorAll('#navLinksDesktop a');
+            const allNavLinks = document.querySelectorAll('.nav-links a, .mobile-nav-link');
+            const abstractModal = document.getElementById('abstractModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            const modalCloseBtn = document.getElementById('modalClose');
+            const readAbstractButtons = document.querySelectorAll('.read-abstract');
+            const revealElements = document.querySelectorAll('.reveal');
 
-    <footer><div class="container">&copy; 2026 Mohammed Abdul Al Arafat Tanzin — All rights reserved.</div></footer>
-  </main>
+            // --- SCROLL: NAV SHADOW ---
+            function updateNavShadow() {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+            window.addEventListener('scroll', updateNavShadow, { passive: true });
+            updateNavShadow();
 
-  <!-- Abstract Modal -->
-  <div class="modal-overlay" id="abstractModal"><div class="modal-content"><div class="modal-header"><div class="modal-title" id="modalTitle">Abstract</div><button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button></div><div class="modal-body" id="modalBody">Abstract content will appear here.</div></div></div>
+            // --- SCROLL: ACTIVE NAV LINK ---
+            function updateActiveNavLink() {
+                const sections = document.querySelectorAll('section[id]');
+                const scrollY = window.scrollY + 120;
+                let currentSectionId = '';
 
-  
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                allNavLinks.forEach(function(link) {
+                    link.classList.remove('nav-active');
+                    if (link.getAttribute('href') === '#' + currentSectionId) {
+                        link.classList.add('nav-active');
+                    }
+                });
+            }
+            window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+            updateActiveNavLink();
+
+            // --- SCROLL REVEAL (Intersection Observer) ---
+            if ('IntersectionObserver' in window && revealElements.length > 0) {
+                const revealObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            revealObserver.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    root: null,
+                    rootMargin: '0px 0px -40px 0px',
+                    threshold: 0.1
+                });
+
+                revealElements.forEach(function(el) {
+                    revealObserver.observe(el);
+                });
+            } else {
+                // Fallback: show all immediately
+                revealElements.forEach(function(el) {
+                    el.classList.add('revealed');
+                });
+            }
+
+            // --- MOBILE MENU ---
+            function openMobileMenu() {
+                mobileOverlay.classList.add('active');
+                menuToggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                mobileOverlay.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    if (expanded) {
+                        closeMobileMenu();
+                    } else {
+                        openMobileMenu();
+                    }
+                });
+            }
+
+            if (mobileClose) {
+                mobileClose.addEventListener('click', closeMobileMenu);
+            }
+
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', function(e) {
+                    if (e.target === mobileOverlay) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            // Close mobile menu when a link is clicked
+            mobileNavLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    closeMobileMenu();
+                });
+            });
+
+            // --- ESC KEY TO CLOSE ---
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (mobileOverlay && mobileOverlay.classList.contains('active')) {
+                        closeMobileMenu();
+                    }
+                    if (abstractModal && abstractModal.classList.contains('active')) {
+                        closeModal();
+                    }
+                }
+            });
+
+            // --- ABSTRACT MODAL ---
+            function openModal(title, bodyText) {
+                if (!abstractModal || !modalTitle || !modalBody) return;
+                modalTitle.textContent = title;
+                modalBody.textContent = bodyText;
+                abstractModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                if (!abstractModal) return;
+                abstractModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            if (readAbstractButtons.length > 0) {
+                readAbstractButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        const title = this.getAttribute('data-title');
+                        const abstract = this.getAttribute('data-abstract');
+                        openModal(title, abstract);
+                    });
+                });
+            }
+
+            if (modalCloseBtn) {
+                modalCloseBtn.addEventListener('click', closeModal);
+            }
+
+            if (abstractModal) {
+                abstractModal.addEventListener('click', function(e) {
+                    if (e.target === abstractModal) {
+                        closeModal();
+                    }
+                });
+            }
+
+            // --- SMOOTH SCROLLING (fallback for browsers that don't support smooth scroll-behavior) ---
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (!href || href === '#') return;
+                    if (!href.startsWith('#')) return;
+
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (!target) return;
+
+                    const navHeight = navbar ? navbar.offsetHeight + 12 : 64;
+                    const y = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                });
+            });
+
+            // --- INIT ---
+            updateNavShadow();
+            updateActiveNavLink();
+        })();
+    </script>
 </body>
 </html>
